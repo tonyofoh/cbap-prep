@@ -1,0 +1,376 @@
+[
+  {
+    "scenario_id": "S1",
+    "title": "Global Online Platform — Multi-Currency Payments, Refunds & Compliance",
+    "scenario": "A global e-commerce platform is rolling out a multi-currency payment gateway across North America, EMEA, and APAC. The initiative must support real-time FX rate updates, region-specific refund SLAs, and varying compliance rules (AML/KYC, PCI-DSS). Operations, Marketing, Compliance, Finance, and Regional Managers often interpret refund and notification rules differently, leading to inconsistent customer experiences and rework. The BA has to achieve alignment on terminology, policies, and service levels; model order/return workflows; manage trade-offs for performance targets (for example, refund turnaround time); and ensure traceability from business goals to implemented capabilities. Several country sites integrate with legacy tax and invoicing systems, and delivery partners expose different interface contracts. The program is delivered iteratively with design prototypes and frequent stakeholder reviews.",
+    "questions": [
+      {
+        "question_number": 1,
+        "question": "To ensure all key viewpoints are engaged before detailing requirements, what should the BA do first?",
+        "options": {
+          "A": "Conduct stakeholder analysis",
+          "B": "Document functional requirements",
+          "C": "Develop user stories",
+          "D": "Facilitate UAT"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "Identifying, analyzing, and planning engagement for stakeholders is foundational to effective elicitation and governance.",
+        "why_others_are_wrong": {
+          "B": "Premature without knowing who to involve.",
+          "C": "Too detailed before stakeholder landscape is clear.",
+          "D": "UAT is a late-lifecycle activity."
+        },
+        "bakok_reference": "BABOK v3 — 3.2 Plan Stakeholder Engagement"
+      },
+      {
+        "question_number": 2,
+        "question": "Ops and Finance disagree on how frequently FX rates should refresh due to potential order disruption. What is the BA's next best step?",
+        "options": {
+          "A": "Perform impact analysis on rate-update frequency",
+          "B": "Update requirements immediately",
+          "C": "Escalate to project governance",
+          "D": "Defer until testing"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "Impact Analysis evaluates dependencies, risks, and downstream effects to inform decisions.",
+        "why_others_are_wrong": {
+          "B": "May embed conflicts and trigger rework.",
+          "C": "Escalate with evidence after analysis.",
+          "D": "Deferral weakens collaboration and clarity."
+        },
+        "bakok_reference": "BABOK v3 — 10.25 Impact Analysis"
+      },
+      {
+        "question_number": 3,
+        "question": "The BA must illustrate region-specific order, return, and refund steps with decision points. Which technique is most appropriate?",
+        "options": {
+          "A": "Process Modelling",
+          "B": "Data Modelling",
+          "C": "Use Case Diagram",
+          "D": "State Modelling"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "Process models show activities, flows, and decisions across regions, ideal for operational alignment.",
+        "why_others_are_wrong": {
+          "B": "Focuses on data structure.",
+          "C": "Shows actor interactions, not flow detail.",
+          "D": "Shows lifecycle states of an entity."
+        },
+        "bakok_reference": "BAKOK v3 — 10.31 Process Modelling"
+      },
+      {
+        "question_number": 4,
+        "question": "Terms such as refund, reversal, and chargeback are used inconsistently. What should the BA produce?",
+        "options": {
+          "A": "Glossary and Concept Model",
+          "B": "Process Flow Diagram",
+          "C": "Stakeholder Register",
+          "D": "Business Case"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "Concept Modelling with a shared glossary standardizes domain vocabulary and relationships.",
+        "why_others_are_wrong": {
+          "B": "Explains steps, not meaning.",
+          "C": "Lists people, not terminology.",
+          "D": "Justifies value, not language."
+        },
+        "bakok_reference": "BABOK v3 — 10.9 Concept Modelling"
+      },
+      {
+        "question_number": 5,
+        "question": "Leaders demand a 24-hour global refund SLA. What type of requirement is this?",
+        "options": {
+          "A": "Non-functional requirement",
+          "B": "Functional requirement",
+          "C": "Transition requirement",
+          "D": "Stakeholder requirement"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "Time-based service levels are quality/performance attributes.",
+        "why_others_are_wrong": {
+          "B": "Functional describes system behavior, not quality.",
+          "C": "Transition is temporary migration need.",
+          "D": "Stakeholder expresses a need, not the quality class."
+        },
+        "bakok_reference": "BABOK v3 — 2.3 Requirements Classification Schema"
+      },
+      {
+        "question_number": 6,
+        "question": "To ensure each capability supports business objectives, which artifact should the BA maintain?",
+        "options": {
+          "A": "Requirements Traceability Matrix (RTM)",
+          "B": "Use Case Diagram",
+          "C": "Project Scope Statement",
+          "D": "RACI Matrix"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "RTM links needs to requirements, design, and tests to safeguard alignment.",
+        "why_others_are_wrong": {
+          "B": "Covers actor interactions only.",
+          "C": "Defines boundaries, not linkages.",
+          "D": "Covers roles/decisions, not requirement lineage."
+        },
+        "bakok_reference": "BABOK v3 — 5.2 Trace Requirements"
+      },
+      {
+        "question_number": 7,
+        "question": "The BA organizes UI demos to validate refund flows before build. Which technique is being applied?",
+        "options": {
+          "A": "Prototyping",
+          "B": "Brainstorming",
+          "C": "Interface Analysis",
+          "D": "Data Flow Diagram"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "Prototyping validates understanding and reduces ambiguity pre-development.",
+        "why_others_are_wrong": {
+          "B": "Idea generation, not validation.",
+          "C": "Focus on integration points, not UI validation.",
+          "D": "Shows data movement, not UI."
+        },
+        "bakok_reference": "BABOK v3 — 10.37 Prototyping"
+      },
+      {
+        "question_number": 8,
+        "question": "Compliance and Marketing conflict on the content/timing of refund notifications. What should the BA do?",
+        "options": {
+          "A": "Facilitate a conflict-resolution workshop",
+          "B": "Prioritize compliance unilaterally",
+          "C": "Defer decision to escalation",
+          "D": "Document both and proceed"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "Facilitation enables structured resolution and consensus on constraints and customer needs.",
+        "why_others_are_wrong": {
+          "B": "Undermines collaboration and buy-in.",
+          "C": "Escalate with evidence, after facilitation.",
+          "D": "Proceeding without agreement invites rework."
+        },
+        "bakok_reference": "BABOK v3 — 10.19 Facilitation"
+      },
+      {
+        "question_number": 9,
+        "question": "Refund delays spike in APAC. The BA needs to find underlying causes. Which tool is best?",
+        "options": {
+          "A": "Fishbone (Ishikawa) Diagram",
+          "B": "SWOT",
+          "C": "Benchmarking",
+          "D": "Flowchart"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "Root cause analysis structures causal factors to isolate drivers of delay.",
+        "why_others_are_wrong": {
+          "B": "Strategic scan, not problem analysis.",
+          "C": "External comparisons, not causes.",
+          "D": "Depicts steps, not causal chains."
+        },
+        "bakok_reference": "BABOK v3 — 10.41 Root Cause Analysis"
+      },
+      {
+        "question_number": 10,
+        "question": "The BA must confirm the new refund process achieves customer satisfaction goals post-launch. Which task applies?",
+        "options": {
+          "A": "Measure Solution Performance",
+          "B": "Validate Requirements",
+          "C": "Verify Requirements",
+          "D": "Define Future State"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "Measures actual performance against business value objectives and KPIs.",
+        "why_others_are_wrong": {
+          "B": "Validation is pre-implementation.",
+          "C": "Verification checks requirement quality.",
+          "D": "Future state sets targets, not measures."
+        },
+        "bakok_reference": "BABOK v3 — 8.1 Measure Solution Performance"
+      }
+    ]
+  },
+  {
+    "scenario_id": "S2",
+    "title": "Offender Management System — Justice Data Sharing & Access Control",
+    "scenario": "A justice department is implementing an integrated offender management system to connect prisons, courts, and police. The solution must unify offender intake, parole tracking, and case data. Strict legal and privacy constraints apply, with role-based access for officers, court clerks, and administrators. Regional sites run slightly different processes and duplicate data entry. External interfaces with court and police databases vary in format and timeliness. Stakeholders include compliance, security, parole officers, court staff, IT, and the program sponsor. The BA must reconcile policy conflicts, align processes across regions, define interface contracts, and ensure that confidentiality and auditability requirements are fully traceable into design, testing, and operations.",
+    "questions": [
+      {
+        "question_number": 11,
+        "question": "Security officers cite privacy rules that conflict with data-sharing policies. What should the BA do first?",
+        "options": {
+          "A": "Facilitate a workshop to reconcile policies",
+          "B": "Amend the data model immediately",
+          "C": "Exclude the requirements temporarily",
+          "D": "Ask the sponsor to decide"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "Facilitated collaboration helps resolve conflicts and align requirements before design updates.",
+        "why_others_are_wrong": {
+          "B": "Premature without consensus.",
+          "C": "Loses traceability and context.",
+          "D": "Escalation before analysis reduces buy-in."
+        },
+        "bakok_reference": "BAKOK v3 — 10.19 Facilitation"
+      },
+      {
+        "question_number": 12,
+        "question": "Intake workflow inputs from parole officers are incomplete. What should the BA do?",
+        "options": {
+          "A": "Conduct targeted interviews with parole officers",
+          "B": "Infer details from legacy documents",
+          "C": "Ask developers to estimate without data",
+          "D": "Delay elicitation"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "Interviews fill gaps with firsthand operational knowledge to improve completeness.",
+        "why_others_are_wrong": {
+          "B": "Documents may be outdated.",
+          "C": "Assumptions jeopardize validity.",
+          "D": "Delays progress without adding value."
+        },
+        "bakok_reference": "BABOK v3 — 4.2 Conduct Elicitation"
+      },
+      {
+        "question_number": 13,
+        "question": "Regional offender intake has redundant steps. Which technique best exposes improvement opportunities?",
+        "options": {
+          "A": "Process Modelling",
+          "B": "Benchmarking",
+          "C": "Fishbone Diagram",
+          "D": "SWOT Analysis"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "Process models reveal redundancy and waste across regions for harmonization.",
+        "why_others_are_wrong": {
+          "B": "External comparison, not internal flow.",
+          "C": "Finds causes, not redesign options.",
+          "D": "Strategic scan, not process detail."
+        },
+        "bakok_reference": "BABOK v3 — 10.31 Process Modelling"
+      },
+      {
+        "question_number": 14,
+        "question": "Ensuring only authorized staff can access parole data reflects which requirement type?",
+        "options": {
+          "A": "Non-functional requirement",
+          "B": "Functional requirement",
+          "C": "Transition requirement",
+          "D": "Stakeholder requirement"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "Security and confidentiality are quality attributes, not behaviors.",
+        "why_others_are_wrong": {
+          "B": "Describes actions, not qualities.",
+          "C": "Temporary migration needs only.",
+          "D": "Expresses needs, not classification."
+        },
+        "bakok_reference": "BABOK v3 — 2.3 Requirements Classification Schema"
+      },
+      {
+        "question_number": 15,
+        "question": "The BA must document external system boundaries and data exchanges with courts and police. Which technique fits best?",
+        "options": {
+          "A": "Context Modelling",
+          "B": "Entity-Relationship Diagram",
+          "C": "Use Case Diagram",
+          "D": "Stakeholder Map"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "Context models depict interfaces and boundaries for integration clarity.",
+        "why_others_are_wrong": {
+          "B": "Defines data structure only.",
+          "C": "Focus on actor interactions, not system perimeter.",
+          "D": "Shows people/roles, not systems."
+        },
+        "bakok_reference": "BABOK v3 — 10.8 Context Modelling"
+      },
+      {
+        "question_number": 16,
+        "question": "Duplicate offender records occur across sites. What is the most effective recommendation?",
+        "options": {
+          "A": "Implement centralized validation rules",
+          "B": "Add manual approvals",
+          "C": "Increase data entry training",
+          "D": "Use spreadsheets for pre-checks"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "Centralized rules prevent duplication at source and enforce consistency.",
+        "why_others_are_wrong": {
+          "B": "Approvals don't prevent duplicates.",
+          "C": "Training helps but doesn't fix process flaws.",
+          "D": "Spreadsheets add risk and fragmentation."
+        },
+        "bakok_reference": "BABOK v3 — 10.7 Business Rules Analysis"
+      },
+      {
+        "question_number": 17,
+        "question": "How can the BA ensure each legal rule is implemented and tested appropriately?",
+        "options": {
+          "A": "Maintain a Requirements Traceability Matrix",
+          "B": "Produce a Data Model",
+          "C": "Draft an Architecture Diagram",
+          "D": "Update the Stakeholder Register"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "Traceability links rules to design and test cases for completeness and auditability.",
+        "why_others_are_wrong": {
+          "B": "Captures entities, not rule mappings.",
+          "C": "Shows components, not requirement lineage.",
+          "D": "Lists people, not rules."
+        },
+        "bakok_reference": "BABOK v3 — 5.2 Trace Requirements"
+      },
+      {
+        "question_number": 18,
+        "question": "Court users report processing delays linked to manual approvals. Which analysis should the BA apply?",
+        "options": {
+          "A": "Root Cause Analysis",
+          "B": "SWOT",
+          "C": "Benchmarking",
+          "D": "Business Rules Analysis"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "Root cause isolates delay drivers and informs targeted improvements.",
+        "why_others_are_wrong": {
+          "B": "Strategic overview, not operational diagnosis.",
+          "C": "External comparison, not issue analysis.",
+          "D": "Defines rules, doesn't find causes."
+        },
+        "bakok_reference": "BABOK v3 — 10.41 Root Cause Analysis"
+      },
+      {
+        "question_number": 19,
+        "question": "Temporary procedures are needed during phased rollout. What requirement type is that?",
+        "options": {
+          "A": "Transition requirement",
+          "B": "Functional requirement",
+          "C": "Stakeholder requirement",
+          "D": "Non-functional requirement"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "Transition requirements are temporary enablers for moving from current to future state.",
+        "why_others_are_wrong": {
+          "B": "Permanent behaviors only.",
+          "C": "Captures needs, not classification.",
+          "D": "Quality attributes, not temporary process."
+        },
+        "bakok_reference": "BABOK v3 — 2.3 Requirements Classification Schema"
+      },
+      {
+        "question_number": 20,
+        "question": "Post-rollout role changes cause confusion. Which task helps determine if the organization supports the solution?",
+        "options": {
+          "A": "Assess Enterprise Limitations",
+          "B": "Plan Stakeholder Engagement",
+          "C": "Verify Requirements",
+          "D": "Define Future State"
+        },
+        "correct_answer": "A",
+        "bakok_explanation": "Evaluates organizational structures, culture, and readiness limiting value realization.",
+        "why_others_are_wrong": {
+          "B": "Engagement plan is an earlier planning task.",
+          "C": "Verification focuses on requirement quality.",
+          "D": "Future state sets objectives, not assesses adoption."
+        },
+        "bakok_reference": "BABOK v3 — 8.3 Assess Enterprise Limitations"
+      }
+    ]
+  }
+]

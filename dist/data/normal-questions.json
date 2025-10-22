@@ -1,0 +1,3478 @@
+[
+  {
+    "question_number": 1,
+    "question": "You are the business analyst for your organization. You are identifying new opportunities to improve existing web services. Management is open to new opportunities as long as the changes do not take more than 60 days to implement. What type of factor does the 60-day implementation represent?   ",
+    "options": {
+      "A": "Technical constraint",
+      "B": "Schedule constraint",
+      "C": "Business constraint",
+      "D": "Assumption"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Constraints limit design or implementation options. Timeboxed delivery (e.g., 60 days) is a schedule/time constraint that shapes approach, planning, and prioritization.",
+    "why_others_are_wrong": {
+      "A": "Technical constraints relate to technology limits (platforms, tools, interfaces), not calendar time.",
+      "C": "Business constraints are policy/organizational limits (budget caps, regulatory policy), not the delivery window.",
+      "D": "Assumptions are believed true without proof; a fixed 60-day limit is an explicit constraint, not an assumption."
+    },
+    "babok_reference": "KA3 Plan Business Analysis Approach (constraints considered in approach & timing); KA5 Prioritize Requirements (time constraints) — BABOK v3 §§3.1, 5.3. :contentReference[oaicite:0]{index=0}"
+  },
+  {
+    "question_number": 2,
+    "question": "_____ is the degree to which a set of inherent characteristics fulfills requirements.   ",
+    "options": {
+      "A": "Quality",
+      "B": "Regulation",
+      "C": "Project phase",
+      "D": "Scope"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Quality is meeting stated/implicit needs; requirements quality and solution quality are assessed against criteria and acceptance measures.",
+    "why_others_are_wrong": {
+      "B": "A regulation is an external rule/standard, not a measure of fulfillment.",
+      "C": "A project phase is a time segment, not a characteristic of fulfillment.",
+      "D": "Scope is boundary/extent of work or solution, not a quality level."
+    },
+    "babok_reference": "KA7 Verify/Validate Requirements (quality criteria); KA8 Solution Evaluation (measures) — BABOK v3 §§7.2, 7.3, 8.1–8.2. :contentReference[oaicite:1]{index=1}"
+  },
+  {
+    "question_number": 3,
+    "question": "During organize requirements, which single interrogative must requirements answer for identification?   ",
+    "options": {
+      "A": "What",
+      "B": "When",
+      "C": "Why",
+      "D": "How"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "At the requirement level, identification centers on the capability or information needed — the “what.” “Why” is addressed at business/stakeholder need; “how” belongs to design.",
+    "why_others_are_wrong": {
+      "B": "Scheduling (“when”) is planning detail, not requirement identity.",
+      "C": "“Why” explains business need/rationale, not the requirement identifier.",
+      "D": "“How” is design/implementation detail beyond requirement identity."
+    },
+    "babok_reference": "Requirements vs. Designs; Specify & Model Requirements — BABOK v3 §§2.5, 7.1. :contentReference[oaicite:2]{index=2}"
+  },
+  {
+    "question_number": 4,
+    "question": "In risk analysis, which of the following can be identified as a consequence of a disaster?   ",
+    "options": {
+      "A": "Loss of operating capability",
+      "B": "Loss of goodwill",
+      "C": "Loss of competitive edge",
+      "D": "Loss of stockholder confidence"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "A primary/near-term operational consequence is loss of operating capability; other items are consequential impacts but less immediate than operational capability loss.",
+    "why_others_are_wrong": {
+      "B": "Goodwill loss is a reputational impact, not the primary operational consequence.",
+      "C": "Competitive edge loss is strategic/market impact, not immediate operability.",
+      "D": "Stockholder confidence is an external stakeholder perception effect."
+    },
+    "babok_reference": "Strategy Analysis — Assess Risks (identify consequences); Solution Evaluation — Assess Enterprise Limitations — BABOK v3 §§6.3, 8.4. :contentReference[oaicite:3]{index=3}"
+  },
+  {
+    "question_number": 5,
+    "question": "_____ are timeless events that show progress in the project and are typically achieved at the end of a phase.   ",
+    "options": {
+      "A": "Achievements",
+      "B": "Milestones",
+      "C": "Phases",
+      "D": "Templates"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Milestones are significant points/events indicating progress; often phase-end markers used for planning & monitoring.",
+    "why_others_are_wrong": {
+      "A": "Generic term; not the planning artifact used to indicate progress.",
+      "C": "Phases are timeboxes/segments, not the event marker itself.",
+      "D": "Templates are document formats, unrelated to progress points."
+    },
+    "babok_reference": "Business Analysis Planning & Monitoring — plan timing and checkpoints — BABOK v3 §3.1 (timing/approach). :contentReference[oaicite:4]{index=4}"
+  },
+  {
+    "question_number": 6,
+    "question": "During a requirements review, an implementation SME notes the requirement ‘parse data’ must be implemented before others. The BA gives it high priority. What factor influenced prioritization?   ",
+    "options": {
+      "A": "Data Dictionary",
+      "B": "Constraint",
+      "C": "Dependencies",
+      "D": "Risk"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Precedence relationships (dependencies) influence priority because upstream items unblock others; dependency is a key prioritization factor.",
+    "why_others_are_wrong": {
+      "A": "A repository of terms/definitions; not a prioritization factor by itself.",
+      "B": "Constraints limit options, but the scenario is sequencing, not limitation.",
+      "D": "Risk may influence priority, but here the driver is prerequisite ordering."
+    },
+    "babok_reference": "KA5 Prioritize Requirements (factors include dependency & sequencing) — BABOK v3 §5.3. :contentReference[oaicite:5]{index=5}"
+  },
+  {
+    "question_number": 7,
+    "question": "For a live parcel-tracking solution, which requirements category should the BA emphasize to align with the added value (e.g., real-time tracking accuracy/availability)?   ",
+    "options": {
+      "A": "Transition",
+      "B": "Process",
+      "C": "Non-functional (quality of service)",
+      "D": "Stakeholder"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Real-time tracking value hinges on performance, availability, reliability, and usability—non-functional qualities critical to user value & service levels.",
+    "why_others_are_wrong": {
+      "A": "Transition requirements are temporary (e.g., migration/training), not ongoing service quality.",
+      "B": "Process detail is helpful but doesn’t guarantee service levels.",
+      "D": "Stakeholder needs exist, but value delivery here depends on QoS metrics."
+    },
+    "babok_reference": "Requirements Classification Schema (solution qualities); Non-Functional Requirements Analysis — BABOK v3 §§2.3, 10.30. :contentReference[oaicite:6]{index=6}"
+  },
+  {
+    "question_number": 8,
+    "question": "Which formal acceptance of the project deliverable is described as sign-off?   ",
+    "options": {
+      "A": "Project review",
+      "B": "Sign-off",
+      "C": "Risk assessment",
+      "D": "Inspection trend analysis"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Approval is the formal agreement that requirements/designs are correct and complete; sign-off records that acceptance.",
+    "why_others_are_wrong": {
+      "A": "A review is an activity, not the formal acceptance record.",
+      "C": "Risk assessment identifies/analyzes risks, not acceptance.",
+      "D": "Trend analysis is a quality control technique, not acceptance."
+    },
+    "babok_reference": "KA5 Approve Requirements — formal decision/acceptance — BABOK v3 §5.5. :contentReference[oaicite:7]{index=7}"
+  },
+  {
+    "question_number": 9,
+    "question": "Which artifact represents the structure of all requirements in a change initiative?   ",
+    "options": {
+      "A": "Requirements Document",
+      "B": "Work Product",
+      "C": "Requirements Architecture",
+      "D": "Requirements Model"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Requirements Architecture describes how requirements fit together, relate, and support the overall change—providing a coherent structure.",
+    "why_others_are_wrong": {
+      "A": "A document may contain requirements, but not necessarily the structural relationships.",
+      "B": "Generic term for outputs, not specifically the structural view.",
+      "D": "A model is a specific representation; architecture spans across models."
+    },
+    "babok_reference": "KA7 Define Requirements Architecture — BABOK v3 §7.4. :contentReference[oaicite:8]{index=8}"
+  },
+  {
+    "question_number": 10,
+    "question": "Which mechanism conveys requirements to stakeholders in a descriptive and visual way for effective communication and understanding?   ",
+    "options": {
+      "A": "Graph",
+      "B": "Table",
+      "C": "Model",
+      "D": "Map"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Models (process, data, state, decision, etc.) are structured visual representations used to specify and communicate requirements.",
+    "why_others_are_wrong": {
+      "A": "A graph is one visual form, but BABOK uses the broader concept of models.",
+      "B": "Tables can present data but lack the expressiveness of models.",
+      "D": "A map is a specific diagram type; *model* is the encompassing mechanism."
+    },
+    "babok_reference": "KA7 Specify & Model Requirements; Techniques: Process Modelling, Data Modelling, Concept Modelling — BABOK v3 §§7.1, 10.x. :contentReference[oaicite:9]{index=9}"
+  },
+  {
+    "question_number": 11,
+    "question": "Identify the functional requirement:   ",
+    "options": {
+      "A": "All screens must load within 2 seconds",
+      "B": "The system must allow finger-scan login",
+      "C": "The system must comply with the Data Protection Act",
+      "D": "The system must allow the admin to edit customer details"
+    },
+    "correct_answer": "D",
+    "babok_explanation": "Functional requirements describe capabilities/behaviors (e.g., admin can edit customer details).",
+    "why_others_are_wrong": {
+      "A": "Performance (non-functional QoS).",
+      "B": "Login method is an interface/security feature; often treated as functional, but in BABOK taxonomies biometric UX/security is typically quality/constraint—option D is the unambiguous CRUD function.",
+      "C": "Compliance is a constraint/business rule, not a functional behavior."
+    },
+    "babok_reference": "Requirements Classification Schema — Functional vs. Non-Functional — BABOK v3 §2.3. :contentReference[oaicite:10]{index=10}"
+  },
+  {
+    "question_number": 12,
+    "question": "Uploading historical data into a new application is which requirement type?   ",
+    "options": {
+      "A": "Non-functional requirement",
+      "B": "Functional requirement",
+      "C": "Transition requirement",
+      "D": "Stakeholder requirement"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Data migration/conversion is a temporary capability needed to move from current to future state — a transition requirement.",
+    "why_others_are_wrong": {
+      "A": "Non-functional describes qualities (performance, security), not migration tasks.",
+      "B": "Functional describes ongoing capabilities, not one-time migration.",
+      "D": "Stakeholder requirement expresses needs, not the transitional activity type."
+    },
+    "babok_reference": "Requirements Classification Schema — Transition requirements — BABOK v3 §2.3. :contentReference[oaicite:11]{index=11}"
+  },
+  {
+    "question_number": 13,
+    "question": "Which of the following is NOT typically created by a Business Analyst?   ",
+    "options": {
+      "A": "Gap analysis document",
+      "B": "Use cases and scenarios",
+      "C": "Functional requirements document",
+      "D": "Database design document"
+    },
+    "correct_answer": "D",
+    "babok_explanation": "Database design is generally produced by solution/data architects or developers; BA deliverables include gap analysis, use cases/scenarios, and requirements.",
+    "why_others_are_wrong": {
+      "A": "BAs analyze current vs. future state to identify gaps.",
+      "B": "Use cases/scenarios are standard BA techniques.",
+      "C": "BAs capture functional requirements."
+    },
+    "babok_reference": "KA6 Strategy Analysis (gaps); KA7 RADD (specify/model) — BABOK v3 Chs. 6–7, Techniques Ch.10. :contentReference[oaicite:12]{index=12}"
+  },
+  {
+    "question_number": 14,
+    "question": "The purpose of verifying requirements is to ensure that _____.   ",
+    "options": {
+      "A": "Requirements are well formed",
+      "B": "Requirements and design are compatible",
+      "C": "Requirements and design are ready for validation",
+      "D": "Requirements meet the desired quality criteria"
+    },
+    "correct_answer": "D",
+    "babok_explanation": "Verification evaluates requirement quality (clear, consistent, feasible, testable) before validation against business needs.",
+    "why_others_are_wrong": {
+      "A": "Being ‘well formed’ is one aspect; verification is broader quality conformance.",
+      "B": "Compatibility relates to traceability & architecture; verification centers on requirement quality.",
+      "C": "Readiness for validation is an outcome but not the definition/purpose."
+    },
+    "babok_reference": "KA5 Verify Requirements — BABOK v3 §5.4. :contentReference[oaicite:13]{index=13}"
+  },
+  {
+    "question_number": 15,
+    "question": "Why avoid non-atomic (compound) requirements?   ",
+    "options": {
+      "A": "It is not a good quality requirement",
+      "B": "Risk that part of the requirement may be missed in design/implementation",
+      "C": "They are hard to understand",
+      "D": "They are impossible to implement"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Compound requirements hinder traceability and coverage; parts can be omitted in design/verification, increasing delivery risk.",
+    "why_others_are_wrong": {
+      "A": "True but vague; BABOK stresses impact on coverage/traceability.",
+      "C": "Clarity matters, but the key risk is incomplete implementation/validation.",
+      "D": "Implementation is possible but error-prone; ‘impossible’ is incorrect."
+    },
+    "babok_reference": "KA5 Verify Requirements (quality attributes, atomicity) — BABOK v3 §5.4. :contentReference[oaicite:14]{index=14}"
+  },
+  {
+    "question_number": 16,
+    "question": "What is the main objective of a feasibility study?",
+    "options": {
+      "A": "To assess whether it is possible to meet the requirement specifications",
+      "B": "To evaluate proposed alternatives for feasibility given constraints",
+      "C": "To assist management in implementing the desired system",
+      "D": "To remove bottlenecks in implementing the desired system"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Feasibility studies assess alternative solutions and their viability within constraints (cost, time, technology, risk) to determine the best course of action.",
+    "why_others_are_wrong": {
+      "A": "Too narrow — focuses only on requirements feasibility, not solution options.",
+      "C": "Implementation assistance follows feasibility assessment.",
+      "D": "Removing bottlenecks is operational, not evaluative."
+    },
+    "babok_reference": "KA6 Strategy Analysis – Assess Solution Options, BABOK v3 §6.4."
+  },
+  {
+    "question_number": 17,
+    "question": "A user story is a high-level requirement description. How should it be tested?",
+    "options": {
+      "A": "Using evaluation criteria",
+      "B": "Using acceptance criteria",
+      "C": "By desk checking",
+      "D": "None of these"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "User stories are validated using acceptance criteria, which define the conditions that must be met for the story to be considered complete.",
+    "why_others_are_wrong": {
+      "A": "Evaluation criteria are used during solution assessment, not Agile validation.",
+      "C": "Desk checking is a review, not a validation method.",
+      "D": "Incorrect — acceptance criteria are explicitly used."
+    },
+    "babok_reference": "Agile Extension to BABOK v3, Delivery Horizon – Specify and Manage Acceptance Criteria."
+  },
+  {
+    "question_number": 18,
+    "question": "What is the benefit of prioritizing requirements?",
+    "options": {
+      "A": "To create prioritized solution requirements",
+      "B": "To deliver better business value",
+      "C": "To estimate requirements",
+      "D": "To maintain an optimized backlog"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Prioritization ensures the most valuable and time-sensitive requirements are addressed first, maximizing business value.",
+    "why_others_are_wrong": {
+      "A": "Result, not benefit — prioritized requirements are the outcome.",
+      "C": "Estimation follows prioritization; it’s not the purpose.",
+      "D": "Optimized backlog applies to Agile context but is a by-product."
+    },
+    "babok_reference": "KA5 Requirements Life Cycle Management – Prioritize Requirements, BABOK v3 §5.3."
+  },
+  {
+    "question_number": 19,
+    "question": "Only items near the top of the backlog are elaborated and estimated in detail. Why?",
+    "options": {
+      "A": "They are most time-consuming",
+      "B": "They are to be delivered first",
+      "C": "They are most expensive",
+      "D": "They are high-level stories"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Backlog items at the top are highest priority and prepared for near-term delivery, so they require detailed estimation.",
+    "why_others_are_wrong": {
+      "A": "Effort doesn’t dictate position — value and urgency do.",
+      "C": "Cost may correlate but is not the sorting principle.",
+      "D": "Top items are detailed, not high-level."
+    },
+    "babok_reference": "Agile Extension to BABOK v3, Delivery Horizon – Manage Backlog."
+  },
+  {
+    "question_number": 20,
+    "question": "Which document maintains requirements and their priorities?",
+    "options": {
+      "A": "Business case",
+      "B": "Design document",
+      "C": "Backlog document",
+      "D": "Requirements Traceability Matrix (RTM)"
+    },
+    "correct_answer": "D",
+    "babok_explanation": "The RTM records requirements relationships, priorities, sources, and verification status, ensuring full traceability.",
+    "why_others_are_wrong": {
+      "A": "Defines justification for change, not tracking.",
+      "B": "Captures design details, not requirement priorities.",
+      "C": "Agile backlog is an informal artifact; RTM is the formal traceability tool."
+    },
+    "babok_reference": "KA5 Requirements Life Cycle Management – Trace Requirements, BABOK v3 §5.2."
+  },
+  {
+    "question_number": 21,
+    "question": "A business analyst is developing an approach for analysis. Which of the following is not required?",
+    "options": {
+      "A": "Needs",
+      "B": "Organizational background",
+      "C": "Priority of requirements",
+      "D": "Relevant regulatory frameworks"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Requirement prioritization occurs after elicitation, not during planning. The BA approach focuses on context, stakeholders, and governance.",
+    "why_others_are_wrong": {
+      "A": "Needs define the problem context — essential input.",
+      "B": "Organizational background shapes approach decisions.",
+      "D": "Regulatory frameworks guide compliance-sensitive approaches."
+    },
+    "babok_reference": "KA3 Business Analysis Planning and Monitoring – Plan Business Analysis Approach, BABOK v3 §3.1."
+  },
+  {
+    "question_number": 22,
+    "question": "Which of the following correctly describes limiting access to an application from one device at a time?",
+    "options": {
+      "A": "It’s a constraint",
+      "B": "It’s a risk",
+      "C": "It’s a business rule",
+      "D": "None of these"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "A business rule defines how the business operates or constrains behavior. Limiting users to one active session defines a policy, not a technical constraint.",
+    "why_others_are_wrong": {
+      "A": "Constraints restrict solution design due to external limits (time, cost, technology).",
+      "B": "A risk implies uncertainty, not a deliberate policy.",
+      "D": "‘Business rule’ fits BABOK’s definition."
+    },
+    "babok_reference": "Technique: Business Rules Analysis, BABOK v3 §10.9."
+  },
+  {
+    "question_number": 23,
+    "question": "Which one of the following is NOT a root cause analysis technique?",
+    "options": {
+      "A": "Fishbone Diagram",
+      "B": "Five Whys",
+      "C": "Ishikawa Diagram",
+      "D": "SWOT Analysis"
+    },
+    "correct_answer": "D",
+    "babok_explanation": "SWOT Analysis is a strategic tool for assessing internal/external factors, not for tracing defects or process failures.",
+    "why_others_are_wrong": {
+      "A": "Fishbone (cause-and-effect) diagram identifies root causes.",
+      "B": "Five Whys explores underlying causes through iterative questioning.",
+      "C": "Ishikawa is another name for the Fishbone technique."
+    },
+    "babok_reference": "Technique: Root Cause Analysis, BABOK v3 §10.40."
+  },
+  {
+    "question_number": 24,
+    "question": "Desk check is a review technique. Which description is correct?",
+    "options": {
+      "A": "Informal and done by creator",
+      "B": "Formal and done by creator",
+      "C": "Formal and done by peer",
+      "D": "Informal and done by peer"
+    },
+    "correct_answer": "D",
+    "babok_explanation": "A desk check is an informal review conducted by a peer not involved in creating the deliverable, providing quick feedback.",
+    "why_others_are_wrong": {
+      "A": "Describes self-review, not peer review.",
+      "B": "Desk checks are informal, not formal.",
+      "C": "Formality is incorrect per BABOK."
+    },
+    "babok_reference": "Technique: Reviews, BABOK v3 §10.41."
+  },
+  {
+    "question_number": 25,
+    "question": "In SWOT analysis, what does 'O' stand for?",
+    "options": {
+      "A": "Options",
+      "B": "Opportunities",
+      "C": "Objectives",
+      "D": "Operations"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "SWOT stands for Strengths, Weaknesses, Opportunities, and Threats. ‘Opportunities’ refers to potential external advantages to leverage.",
+    "why_others_are_wrong": {
+      "A": "‘Options’ refers to solution alternatives, not SWOT terminology.",
+      "C": "Objectives relate to goals, not environmental opportunities.",
+      "D": "Operations refer to internal processes, not market chances."
+    },
+    "babok_reference": "Technique: SWOT Analysis, BABOK v3 §10.48."
+  },
+  {
+    "question_number": 26,
+    "question": "Which technique is NOT used for elicitation?",
+    "options": {
+      "A": "Brainstorming",
+      "B": "Business Rules Analysis",
+      "C": "Observation",
+      "D": "Business Capability Analysis"
+    },
+    "correct_answer": "D",
+    "babok_explanation": "Business Capability Analysis is a strategic analysis tool to assess enterprise strengths; not a data-gathering (elicitation) technique.",
+    "why_others_are_wrong": {
+      "A": "Brainstorming is a valid elicitation method for generating ideas.",
+      "B": "Business Rules Analysis may be used to elicit decision logic.",
+      "C": "Observation gathers behavioral insights."
+    },
+    "babok_reference": "Technique: Business Capability Analysis, BABOK v3 §10.8."
+  },
+  {
+    "question_number": 27,
+    "question": "‘Validate’ is a type of relationship in a traceability matrix. Which element validates requirements?",
+    "options": {
+      "A": "Design",
+      "B": "Solution requirements",
+      "C": "Test cases",
+      "D": "Business needs"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Test cases validate requirements by confirming that implemented functionality satisfies business intent.",
+    "why_others_are_wrong": {
+      "A": "Design satisfies requirements but does not validate them.",
+      "B": "Solution requirements derive from higher-level requirements.",
+      "D": "Business needs are the source, not the validator."
+    },
+    "babok_reference": "KA5 Requirements Life Cycle Management – Trace Requirements, BABOK v3 §5.2."
+  },
+  {
+    "question_number": 28,
+    "question": "When a priority change is due to new regulatory tax implementation, what factor drives reprioritization?",
+    "options": {
+      "A": "Benefit",
+      "B": "Cost",
+      "C": "Risk",
+      "D": "Penalty"
+    },
+    "correct_answer": "D",
+    "babok_explanation": "Regulatory or compliance-driven reprioritization arises from potential penalties or legal consequences of non-compliance.",
+    "why_others_are_wrong": {
+      "A": "Benefit is a value-based factor, not compliance-based.",
+      "B": "Cost considerations don’t mandate compliance reprioritization.",
+      "C": "Risk contributes but penalty is explicit for compliance change."
+    },
+    "babok_reference": "KA5 Requirements Life Cycle Management – Prioritize Requirements, BABOK v3 §5.3."
+  },
+  {
+    "question_number": 29,
+    "question": "What is true about requirement traceability as per BABOK?",
+    "options": {
+      "A": "Connects stakeholder needs to business needs and solution requirements",
+      "B": "Connects solution requirements to design, code, and test elements",
+      "C": "Both of these",
+      "D": "None of these"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Traceability spans all levels — from business needs to implementation and validation artifacts, ensuring complete coverage.",
+    "why_others_are_wrong": {
+      "A": "True but incomplete — doesn’t include design/test mapping.",
+      "B": "True but limited — excludes business linkage.",
+      "D": "Incorrect — both statements align with BABOK."
+    },
+    "babok_reference": "KA5 Requirements Life Cycle Management – Trace Requirements, BABOK v3 §5.2."
+  },
+  {
+    "question_number": 30,
+    "question": "Which artifact is developed during elicitation preparation?",
+    "options": {
+      "A": "Business Analysis Information",
+      "B": "Business Analysis Communication Plan",
+      "C": "Elicitation Activity Plan",
+      "D": "Techniques for confirming elicitation results"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Elicitation Activity Plan defines scope, stakeholders, timing, and techniques for the elicitation session.",
+    "why_others_are_wrong": {
+      "A": "Output of elicitation, not preparation.",
+      "B": "Manages communication, not elicitation setup.",
+      "D": "Part of the plan, not a standalone artifact."
+    },
+    "babok_reference": "KA4 Elicitation and Collaboration – Prepare for Elicitation, BABOK v3 §4.1."
+  },
+  {
+    "question_number": 31,
+    "question": "What is the main purpose of a Concept Model?",
+    "options": {
+      "A": "To define glossary terms",
+      "B": "To show relationships among business concepts",
+      "C": "To document data attributes",
+      "D": "To show process sequence"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Concept models define key business concepts and their relationships, forming a shared vocabulary for stakeholders.",
+    "why_others_are_wrong": {
+      "A": "Glossary lists terms but doesn’t model relationships.",
+      "C": "Data dictionary details attributes, not conceptual links.",
+      "D": "Process sequence is shown by process models, not concept models."
+    },
+    "babok_reference": "Technique: Concept Modelling, BABOK v3 §10.11."
+  },
+  {
+    "question_number": 32,
+    "question": "Which BABOK task ensures the correct requirements are specified in documentation?",
+    "options": {
+      "A": "Verify Requirements",
+      "B": "Validate Requirements",
+      "C": "Benchmark Requirements",
+      "D": "Audit Requirements"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Verification ensures requirement quality and correctness before validation with stakeholders.",
+    "why_others_are_wrong": {
+      "B": "Validation checks alignment with business need, not quality.",
+      "C": "Benchmarking evaluates performance metrics, not requirement accuracy.",
+      "D": "Auditing isn’t a BABOK requirements task."
+    },
+    "babok_reference": "KA5 Requirements Life Cycle Management – Verify Requirements, BABOK v3 §5.4."
+  },
+  {
+    "question_number": 33,
+    "question": "A Business Analyst needs to identify stakeholders for a change initiative. What’s the key consideration?",
+    "options": {
+      "A": "Stakeholders are needed for approvals",
+      "B": "Engage stakeholders in all activities to make them feel valued",
+      "C": "Work closely with stakeholders for smoother implementation",
+      "D": "Identify stakeholders for planning analysis activities"
+    },
+    "correct_answer": "D",
+    "babok_explanation": "Stakeholder identification informs planning and analysis strategy. The goal is targeted engagement for relevant inputs.",
+    "why_others_are_wrong": {
+      "A": "Approvals are secondary — identification precedes engagement.",
+      "B": "Engagement depends on relevance, not inclusivity for its own sake.",
+      "C": "Implementation collaboration follows stakeholder identification."
+    },
+    "babok_reference": "KA3 Plan Stakeholder Engagement, BABOK v3 §3.2."
+  },
+  {
+    "question_number": 34,
+    "question": "Which BABOK technique is used to identify underlying causes of observed problems?",
+    "options": {
+      "A": "Root Cause Analysis",
+      "B": "Process Modelling",
+      "C": "SWOT Analysis",
+      "D": "Data Modelling"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Root Cause Analysis identifies the source of issues to address the real problem rather than symptoms.",
+    "why_others_are_wrong": {
+      "B": "Process modelling visualizes activities, doesn’t find causal factors.",
+      "C": "SWOT focuses on external and internal factors, not causes.",
+      "D": "Data modelling represents data, not problem origins."
+    },
+    "babok_reference": "Technique: Root Cause Analysis, BABOK v3 §10.40."
+  },
+  {
+    "question_number": 35,
+    "question": "During solution evaluation, what activity determines whether performance gaps are due to the solution or enterprise?",
+    "options": {
+      "A": "Assess Solution Performance",
+      "B": "Assess Enterprise Limitations",
+      "C": "Measure Solution Performance",
+      "D": "Assess Risks"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Assess Enterprise Limitations determines if issues stem from organizational capabilities, resources, or environment, not the solution itself.",
+    "why_others_are_wrong": {
+      "A": "Assesses solution issues, not enterprise capability gaps.",
+      "C": "Measures metrics but doesn’t identify origin of limitations.",
+      "D": "Risk assessment evaluates uncertainty, not performance causes."
+    },
+    "babok_reference": "KA8 Solution Evaluation – Assess Enterprise Limitations, BABOK v3 §8.4."
+  },
+  {
+    "question_number": 36,
+    "question": "Which requirement type describes system attributes like usability or reliability?",
+    "options": {
+      "A": "Functional",
+      "B": "Transition",
+      "C": "Non-functional",
+      "D": "Stakeholder"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Non-functional requirements define the quality attributes and constraints of a system — performance, security, usability, etc.",
+    "why_others_are_wrong": {
+      "A": "Describes what the system does, not how it behaves.",
+      "B": "Pertains to temporary changes, not ongoing qualities.",
+      "D": "Express stakeholder needs, not measurable qualities."
+    },
+    "babok_reference": "Requirements Classification Schema – Non-functional Requirements, BABOK v3 §2.3."
+  },
+  {
+    "question_number": 37,
+    "question": "When are non-functional requirements most critical?",
+    "options": {
+      "A": "During initial stakeholder analysis",
+      "B": "During design and testing",
+      "C": "During transition",
+      "D": "During benefits measurement"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Design and testing ensure non-functional attributes (performance, security) are implemented and verified effectively.",
+    "why_others_are_wrong": {
+      "A": "Identified early but not validated here.",
+      "C": "Transition focuses on deployment, not system quality verification.",
+      "D": "Benefits measurement follows release and focuses on outcomes."
+    },
+    "babok_reference": "KA7 RADD and KA8 Solution Evaluation, BABOK v3 §§7.5, 8.2."
+  },
+  {
+    "question_number": 38,
+    "question": "In BABOK, which relationship type links a requirement to a higher-level one it was derived from?",
+    "options": {
+      "A": "Satisfy",
+      "B": "Derive",
+      "C": "Validate",
+      "D": "Depend"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "‘Derive’ shows hierarchical relationship — one requirement originates from another higher-level requirement.",
+    "why_others_are_wrong": {
+      "A": "‘Satisfy’ links design to requirements.",
+      "C": "‘Validate’ connects requirements to test or business need.",
+      "D": "‘Depend’ shows sequencing or dependency, not hierarchy."
+    },
+    "babok_reference": "KA5 Requirements Life Cycle Management – Trace Requirements, BABOK v3 §5.2."
+  },
+  {
+    "question_number": 39,
+    "question": "Which BABOK technique is used to visually depict cause–effect relationships of a problem?",
+    "options": {
+      "A": "Ishikawa Diagram",
+      "B": "Decision Modelling",
+      "C": "Data Modelling",
+      "D": "Stakeholder Map"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "The Ishikawa (Fishbone) Diagram identifies root causes across categories such as process, people, tools, and environment.",
+    "why_others_are_wrong": {
+      "B": "Decision Modelling shows logic flows, not cause–effect analysis.",
+      "C": "Data Modelling defines data structures.",
+      "D": "Stakeholder Map depicts relationships, not causes."
+    },
+    "babok_reference": "Technique: Root Cause Analysis – Ishikawa Diagram, BABOK v3 §10.40."
+  },
+  {
+    "question_number": 40,
+    "question": "Which BABOK knowledge area focuses on identifying current state and defining future state?",
+    "options": {
+      "A": "Strategy Analysis",
+      "B": "Business Analysis Planning and Monitoring",
+      "C": "Solution Evaluation",
+      "D": "Requirements Life Cycle Management"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Strategy Analysis assesses the current state, defines the desired future state, and develops the change strategy to bridge the gap.",
+    "why_others_are_wrong": {
+      "B": "Covers planning activities, not state definition.",
+      "C": "Focuses on solution performance, not strategic gap analysis.",
+      "D": "Manages requirement progression, not strategic definition."
+    },
+    "babok_reference": "KA6 Strategy Analysis – Assess Current & Define Future State, BABOK v3 §§6.1–6.3."
+  },
+  {
+    "question_number": 41,
+    "question": "Which BABOK technique helps identify what data an organization needs to track and how it relates across entities?",
+    "options": {
+      "A": "Data Modelling",
+      "B": "Concept Modelling",
+      "C": "Process Modelling",
+      "D": "Decision Modelling"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Data Modelling defines logical and physical structures of data, including attributes and relationships between data entities.",
+    "why_others_are_wrong": {
+      "B": "Concept Modelling defines high-level business concepts, not data entities.",
+      "C": "Process Modelling shows activities and flows, not data structure.",
+      "D": "Decision Modelling defines logic for choices, not data storage."
+    },
+    "babok_reference": "Technique: Data Modelling, BABOK v3 §10.13."
+  },
+  {
+    "question_number": 42,
+    "question": "What is the key purpose of Requirements Validation?",
+    "options": {
+      "A": "Ensure the solution meets stakeholder needs",
+      "B": "Ensure requirements meet quality criteria",
+      "C": "Ensure project deliverables meet deadlines",
+      "D": "Ensure all designs are feasible"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Validation confirms that requirements align with business goals and stakeholder needs — ensuring the right requirements are defined.",
+    "why_others_are_wrong": {
+      "B": "That’s the purpose of verification, not validation.",
+      "C": "Scheduling is project management, not business analysis.",
+      "D": "Design feasibility belongs to Solution Evaluation."
+    },
+    "babok_reference": "KA5 Requirements Life Cycle Management – Validate Requirements, BABOK v3 §5.5."
+  },
+  {
+    "question_number": 43,
+    "question": "Which BABOK technique visually represents how decisions are made using inputs and business rules?",
+    "options": {
+      "A": "Decision Modelling",
+      "B": "Process Modelling",
+      "C": "Data Modelling",
+      "D": "Stakeholder Mapping"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Decision Modelling captures repeatable decisions, their inputs, and business rules, often using decision tables or DMN notation.",
+    "why_others_are_wrong": {
+      "B": "Process Modelling focuses on activity flows, not decision logic.",
+      "C": "Data Modelling defines entities, not decisions.",
+      "D": "Stakeholder Mapping defines relationships, not rules."
+    },
+    "babok_reference": "Technique: Decision Modelling, BABOK v3 §10.17."
+  },
+  {
+    "question_number": 44,
+    "question": "Which BABOK technique helps assess how well a solution supports the business needs?",
+    "options": {
+      "A": "Benchmarking and Market Analysis",
+      "B": "Solution Evaluation",
+      "C": "Risk Analysis",
+      "D": "Metrics and KPIs"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Solution Evaluation measures how effectively a solution meets desired outcomes and business needs.",
+    "why_others_are_wrong": {
+      "A": "Compares external performance, not internal effectiveness.",
+      "C": "Identifies uncertainty, not solution alignment.",
+      "D": "Metrics support evaluation but aren’t the evaluation process."
+    },
+    "babok_reference": "KA8 Solution Evaluation – Measure Solution Performance, BABOK v3 §8.1."
+  },
+  {
+    "question_number": 45,
+    "question": "In BABOK, which term represents a condition that limits solution design or implementation options?",
+    "options": {
+      "A": "Assumption",
+      "B": "Constraint",
+      "C": "Risk",
+      "D": "Dependency"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "A constraint restricts design or implementation flexibility — e.g., budget, technology, schedule.",
+    "why_others_are_wrong": {
+      "A": "Assumptions are unverified beliefs.",
+      "C": "Risk is an uncertain event, not a fixed limitation.",
+      "D": "Dependency describes sequencing, not restriction."
+    },
+    "babok_reference": "KA6 Strategy Analysis – Assess Risks and Constraints, BABOK v3 §6.3."
+  },
+  {
+    "question_number": 46,
+    "question": "Which BABOK technique defines what an organization does, at what level, and how those capabilities interrelate?",
+    "options": {
+      "A": "Business Process Modelling",
+      "B": "Business Capability Analysis",
+      "C": "Organizational Modelling",
+      "D": "Functional Decomposition"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Business Capability Analysis identifies enterprise strengths and areas needing development to support strategy execution.",
+    "why_others_are_wrong": {
+      "A": "Models processes, not capability structure.",
+      "C": "Shows roles and hierarchy, not capabilities.",
+      "D": "Decomposes functionality, not capability maturity."
+    },
+    "babok_reference": "Technique: Business Capability Analysis, BABOK v3 §10.8."
+  },
+  {
+    "question_number": 47,
+    "question": "What does the Requirements Traceability Matrix primarily ensure?",
+    "options": {
+      "A": "All business goals are met",
+      "B": "Every requirement is linked through its lifecycle",
+      "C": "All requirements are functional",
+      "D": "All designs are complete"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Traceability ensures every requirement is connected from origin to implementation and testing for completeness.",
+    "why_others_are_wrong": {
+      "A": "Traceability supports goals but doesn’t ensure goal achievement.",
+      "C": "Includes all requirement types, not just functional.",
+      "D": "Design completeness is a design verification activity."
+    },
+    "babok_reference": "KA5 Requirements Life Cycle Management – Trace Requirements, BABOK v3 §5.2."
+  },
+  {
+    "question_number": 48,
+    "question": "Which BABOK technique captures events, triggers, and workflows from start to finish?",
+    "options": {
+      "A": "Process Modelling",
+      "B": "Use Case Modelling",
+      "C": "Sequence Diagram",
+      "D": "Data Flow Diagram"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Process Modelling describes sequences of activities, events, and decisions to understand workflow and process improvement opportunities.",
+    "why_others_are_wrong": {
+      "B": "Use cases describe interactions, not full process flows.",
+      "C": "Sequence diagrams show object interactions, not workflows.",
+      "D": "Data Flow Diagrams show data movement, not control flow."
+    },
+    "babok_reference": "Technique: Process Modelling, BABOK v3 §10.40."
+  },
+  {
+    "question_number": 49,
+    "question": "Which BABOK technique helps evaluate whether the benefits of a proposed change justify its cost?",
+    "options": {
+      "A": "Risk Analysis",
+      "B": "Financial Analysis",
+      "C": "Business Case",
+      "D": "Cost–Benefit Analysis"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "A Business Case defines the rationale for a proposed change, comparing expected benefits, costs, and risks.",
+    "why_others_are_wrong": {
+      "A": "Focuses on uncertainty, not justification.",
+      "B": "Analyzes cost but doesn’t define decision rationale.",
+      "D": "Is a component of a business case, not the overall artifact."
+    },
+    "babok_reference": "KA6 Strategy Analysis – Define Change Strategy, BABOK v3 §6.4."
+  },
+  {
+    "question_number": 50,
+    "question": "Which task ensures requirements remain aligned with approved designs as changes occur?",
+    "options": {
+      "A": "Maintain Requirements",
+      "B": "Trace Requirements",
+      "C": "Validate Requirements",
+      "D": "Manage Stakeholder Collaboration"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Maintain Requirements ensures approved requirements stay accurate and current as designs evolve.",
+    "why_others_are_wrong": {
+      "B": "Trace links requirements but doesn’t maintain accuracy over time.",
+      "C": "Validation focuses on business need alignment.",
+      "D": "Collaboration manages engagement, not requirement updates."
+    },
+    "babok_reference": "KA5 Requirements Life Cycle Management – Maintain Requirements, BABOK v3 §5.1."
+  },
+  {
+    "question_number": 51,
+    "question": "Which BABOK technique captures measurable indicators that demonstrate performance toward goals?",
+    "options": {
+      "A": "Metrics and KPIs",
+      "B": "Performance Modelling",
+      "C": "Benchmarking",
+      "D": "Value Stream Mapping"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Metrics and KPIs define quantifiable measurements used to evaluate performance and goal attainment.",
+    "why_others_are_wrong": {
+      "B": "Not a formal BABOK technique.",
+      "C": "Compares external performance levels, not internal KPIs.",
+      "D": "Shows process flow efficiency, not measurement indicators."
+    },
+    "babok_reference": "Technique: Metrics and Key Performance Indicators, BABOK v3 §10.29."
+  },
+  {
+    "question_number": 52,
+    "question": "Which BABOK knowledge area focuses on managing stakeholder engagement during requirement activities?",
+    "options": {
+      "A": "Business Analysis Planning and Monitoring",
+      "B": "Elicitation and Collaboration",
+      "C": "Requirements Life Cycle Management",
+      "D": "Strategy Analysis"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Elicitation and Collaboration cover engaging stakeholders, confirming results, and ensuring shared understanding.",
+    "why_others_are_wrong": {
+      "A": "Covers planning and monitoring, not active engagement.",
+      "C": "Focuses on managing requirement progression.",
+      "D": "Defines business goals, not stakeholder communication."
+    },
+    "babok_reference": "KA4 Elicitation and Collaboration, BABOK v3 §§4.1–4.5."
+  },
+  {
+    "question_number": 53,
+    "question": "Which BABOK technique helps evaluate solution performance over time?",
+    "options": {
+      "A": "Benchmarking",
+      "B": "Trend Analysis",
+      "C": "Observation",
+      "D": "Risk Analysis"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Trend Analysis identifies patterns over time to determine whether performance is improving or declining.",
+    "why_others_are_wrong": {
+      "A": "Provides comparison at a single point in time.",
+      "C": "Used to study behaviors, not metrics.",
+      "D": "Focuses on uncertainty, not longitudinal measurement."
+    },
+    "babok_reference": "Technique: Metrics and KPIs – Trend Analysis, BABOK v3 §10.29."
+  },
+  {
+    "question_number": 54,
+    "question": "Which BABOK technique helps in visually representing stakeholder roles and their influence?",
+    "options": {
+      "A": "Stakeholder Map",
+      "B": "RACI Matrix",
+      "C": "Organization Modelling",
+      "D": "Mind Mapping"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Stakeholder Mapping illustrates stakeholders’ influence, authority, and relationships to the initiative.",
+    "why_others_are_wrong": {
+      "B": "Shows responsibility assignment, not influence visualization.",
+      "C": "Depicts structure, not stakeholder dynamics.",
+      "D": "Represents ideas, not stakeholder roles."
+    },
+    "babok_reference": "Technique: Stakeholder Mapping, BABOK v3 §10.44."
+  },
+  {
+    "question_number": 55,
+    "question": "Which BABOK technique is used to compare organizational performance against others?",
+    "options": {
+      "A": "SWOT Analysis",
+      "B": "Root Cause Analysis",
+      "C": "Benchmarking and Market Analysis",
+      "D": "Data Modelling"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Benchmarking compares performance against industry standards to identify gaps and improvement opportunities.",
+    "why_others_are_wrong": {
+      "A": "Identifies internal/external factors but not quantitative performance comparison.",
+      "B": "Finds causes of issues, not comparative performance.",
+      "D": "Represents data, not comparative metrics."
+    },
+    "babok_reference": "Technique: Benchmarking and Market Analysis, BABOK v3 §10.5."
+  },
+  {
+    "question_number": 56,
+    "question": "Which BABOK technique helps clarify ambiguous terminology among stakeholders?",
+    "options": {
+      "A": "Glossary",
+      "B": "Concept Modelling",
+      "C": "Stakeholder Mapping",
+      "D": "Business Rules Analysis"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Glossaries define standard terms to ensure consistent understanding across the business domain.",
+    "why_others_are_wrong": {
+      "B": "Concept Model shows relationships, not definitions.",
+      "C": "Identifies roles and influence, not terms.",
+      "D": "Defines operational logic, not vocabulary."
+    },
+    "babok_reference": "Technique: Glossary, BABOK v3 §10.22."
+  },
+  {
+    "question_number": 57,
+    "question": "Which BABOK technique evaluates how well a process or solution aligns with industry best practices?",
+    "options": {
+      "A": "Benchmarking",
+      "B": "Process Modelling",
+      "C": "Root Cause Analysis",
+      "D": "Business Capability Analysis"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Benchmarking compares organizational processes against best practices or competitors to identify performance gaps.",
+    "why_others_are_wrong": {
+      "B": "Depicts workflows but doesn’t compare performance.",
+      "C": "Finds underlying problems, not comparisons.",
+      "D": "Assesses capability maturity, not process performance."
+    },
+    "babok_reference": "Technique: Benchmarking and Market Analysis, BABOK v3 §10.5."
+  },
+  {
+    "question_number": 58,
+    "question": "Which BABOK technique helps group related requirements or ideas to identify themes?",
+    "options": {
+      "A": "Affinity Diagramming",
+      "B": "Mind Mapping",
+      "C": "Brainstorming",
+      "D": "Workshops"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Affinity Diagramming organizes large volumes of data or ideas into logical groups based on relationships or themes.",
+    "why_others_are_wrong": {
+      "B": "Mind mapping visualizes ideas hierarchically, not thematically grouped.",
+      "C": "Generates ideas, not organizes them.",
+      "D": "Facilitates elicitation but doesn’t organize ideas post-session."
+    },
+    "babok_reference": "Technique: Affinity Diagramming, BABOK v3 §10.2."
+  },
+  {
+    "question_number": 59,
+    "question": "Which BABOK task involves selecting elicitation techniques and identifying stakeholders to participate?",
+    "options": {
+      "A": "Prepare for Elicitation",
+      "B": "Conduct Elicitation",
+      "C": "Confirm Elicitation Results",
+      "D": "Plan Stakeholder Engagement"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Prepare for Elicitation defines the purpose, scope, participants, and techniques to ensure productive sessions.",
+    "why_others_are_wrong": {
+      "B": "Executes elicitation sessions, not planning.",
+      "C": "Occurs after elicitation to verify results.",
+      "D": "Covers overall stakeholder approach, not elicitation logistics."
+    },
+    "babok_reference": "KA4 Elicitation and Collaboration – Prepare for Elicitation, BABOK v3 §4.1."
+  },
+  {
+    "question_number": 60,
+    "question": "Which BABOK knowledge area defines how requirements are structured and maintained throughout their lifecycle?",
+    "options": {
+      "A": "Requirements Life Cycle Management",
+      "B": "Business Analysis Planning and Monitoring",
+      "C": "Elicitation and Collaboration",
+      "D": "Solution Evaluation"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Requirements Life Cycle Management governs how requirements are traced, maintained, prioritized, and validated from inception to implementation.",
+    "why_others_are_wrong": {
+      "B": "Focuses on planning and monitoring analysis activities.",
+      "C": "Deals with gathering and confirming information, not lifecycle structure.",
+      "D": "Evaluates performance post-implementation."
+    },
+    "babok_reference": "KA5 Requirements Life Cycle Management, BABOK v3 §§5.1–5.5."
+  },
+  {
+    "question_number": 61,
+    "question": "Which BABOK technique helps discover what data is exchanged between external entities and the system?",
+    "options": {
+      "A": "Data Flow Diagrams",
+      "B": "Process Modelling",
+      "C": "Context Diagram",
+      "D": "State Modelling"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Context Diagrams illustrate the system boundary, showing external entities and the data flowing between them.",
+    "why_others_are_wrong": {
+      "A": "Data Flow Diagrams show internal data movement, not boundary interactions.",
+      "B": "Depicts activities, not external interfaces.",
+      "D": "Shows state transitions, not data exchanges."
+    },
+    "babok_reference": "Technique: Context Diagram, BABOK v3 §10.12."
+  },
+  {
+    "question_number": 62,
+    "question": "Which BABOK technique is used to depict the lifecycle of an entity through its various states?",
+    "options": {
+      "A": "State Modelling",
+      "B": "Process Modelling",
+      "C": "Data Modelling",
+      "D": "Decision Modelling"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "State Modelling identifies possible states of an entity and the events that trigger transitions between them.",
+    "why_others_are_wrong": {
+      "B": "Focuses on process flow, not object states.",
+      "C": "Describes data structures, not transitions.",
+      "D": "Represents decision logic, not lifecycle behavior."
+    },
+    "babok_reference": "Technique: State Modelling, BABOK v3 §10.43."
+  },
+  {
+    "question_number": 63,
+    "question": "Which BABOK technique helps identify all possible combinations of conditions and actions?",
+    "options": {
+      "A": "Decision Tables",
+      "B": "Decision Trees",
+      "C": "Business Rules Analysis",
+      "D": "Process Modelling"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Decision Tables enumerate all condition–action combinations to ensure completeness and consistency of business logic.",
+    "why_others_are_wrong": {
+      "B": "Decision Trees visualize logic flow but don’t systematically list combinations.",
+      "C": "Defines rules; Decision Tables organize them.",
+      "D": "Depicts processes, not logic combinations."
+    },
+    "babok_reference": "Technique: Decision Modelling – Decision Tables, BABOK v3 §10.17."
+  },
+  {
+    "question_number": 64,
+    "question": "What is the purpose of Organizational Modelling in BABOK?",
+    "options": {
+      "A": "To define roles, responsibilities, and reporting relationships",
+      "B": "To document data relationships",
+      "C": "To describe decision logic",
+      "D": "To define KPIs"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Organizational Modelling defines internal structures, relationships, and authority lines that influence how work is performed.",
+    "why_others_are_wrong": {
+      "B": "Data relationships belong to Data Modelling.",
+      "C": "Decision logic belongs to Decision Modelling.",
+      "D": "KPIs belong to Metrics and KPI technique."
+    },
+    "babok_reference": "Technique: Organizational Modelling, BABOK v3 §10.32."
+  },
+  {
+    "question_number": 65,
+    "question": "Which BABOK technique identifies gaps between current and future capabilities?",
+    "options": {
+      "A": "Gap Analysis",
+      "B": "Benchmarking",
+      "C": "Risk Analysis",
+      "D": "Root Cause Analysis"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Gap Analysis compares the current and desired future state to identify missing capabilities or conditions.",
+    "why_others_are_wrong": {
+      "B": "Compares with competitors, not future state.",
+      "C": "Assesses uncertainty, not capability difference.",
+      "D": "Finds underlying causes, not state gaps."
+    },
+    "babok_reference": "Technique: Gap Analysis, BABOK v3 §10.21."
+  },
+  {
+    "question_number": 66,
+    "question": "Which BABOK task includes defining the scope of the solution space?",
+    "options": {
+      "A": "Define Future State",
+      "B": "Assess Current State",
+      "C": "Define Change Strategy",
+      "D": "Plan Business Analysis Approach"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Defining the future state establishes the boundaries and scope for potential solutions.",
+    "why_others_are_wrong": {
+      "B": "Describes current conditions, not scope.",
+      "C": "Selects the approach to transition, not defines scope.",
+      "D": "Focuses on planning BA work, not the solution space."
+    },
+    "babok_reference": "KA6 Strategy Analysis – Define Future State, BABOK v3 §6.2."
+  },
+  {
+    "question_number": 67,
+    "question": "Which BABOK task identifies the business need triggering the initiative?",
+    "options": {
+      "A": "Assess Current State",
+      "B": "Define Business Need",
+      "C": "Define Future State",
+      "D": "Assess Risks"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Assess Current State defines problems, constraints, and opportunities driving business needs.",
+    "why_others_are_wrong": {
+      "B": "Not a standalone BABOK task; part of current-state assessment.",
+      "C": "Describes desired outcomes, not needs.",
+      "D": "Evaluates uncertainties, not identifies needs."
+    },
+    "babok_reference": "KA6 Strategy Analysis – Assess Current State, BABOK v3 §6.1."
+  },
+  {
+    "question_number": 68,
+    "question": "Which BABOK technique determines why stakeholders behave in certain ways or hold specific opinions?",
+    "options": {
+      "A": "Interviews",
+      "B": "Observation",
+      "C": "Focus Groups",
+      "D": "Root Cause Analysis"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Focus Groups explore stakeholder perceptions, attitudes, and reasoning through guided group discussion.",
+    "why_others_are_wrong": {
+      "A": "Interviews gather individual insight, not group dynamics.",
+      "B": "Observation studies behavior, not opinions.",
+      "D": "Analyzes causes of problems, not perceptions."
+    },
+    "babok_reference": "Technique: Focus Groups, BABOK v3 §10.20."
+  },
+  {
+    "question_number": 69,
+    "question": "Which BABOK technique identifies measurable improvements expected from implementing a change?",
+    "options": {
+      "A": "Business Case",
+      "B": "Metrics and KPIs",
+      "C": "Value Stream Mapping",
+      "D": "Balanced Scorecard"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "A Business Case defines expected benefits and performance indicators to measure success post-implementation.",
+    "why_others_are_wrong": {
+      "B": "Defines measures, not justification.",
+      "C": "Shows flow of value, not benefit realization plan.",
+      "D": "Monitors performance across perspectives, not project rationale."
+    },
+    "babok_reference": "KA6 Strategy Analysis – Define Change Strategy, BABOK v3 §6.4."
+  },
+  {
+    "question_number": 70,
+    "question": "Which BABOK technique describes the sequence of activities that transform inputs into outputs?",
+    "options": {
+      "A": "Process Modelling",
+      "B": "Data Modelling",
+      "C": "Value Stream Mapping",
+      "D": "Decision Modelling"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Process Modelling documents activity flows, inputs, outputs, and responsible roles to understand how value is delivered.",
+    "why_others_are_wrong": {
+      "B": "Shows data relationships, not process flow.",
+      "C": "Depicts end-to-end value delivery, not task sequence detail.",
+      "D": "Represents logic, not process."
+    },
+    "babok_reference": "Technique: Process Modelling, BABOK v3 §10.40."
+  },
+  {
+    "question_number": 71,
+    "question": "Which BABOK task identifies potential obstacles to achieving the future state?",
+    "options": {
+      "A": "Assess Risks",
+      "B": "Define Future State",
+      "C": "Validate Requirements",
+      "D": "Assess Enterprise Limitations"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Assess Risks identifies threats that could affect transition or realization of the desired future state.",
+    "why_others_are_wrong": {
+      "B": "Defines the goal, not obstacles.",
+      "C": "Validates alignment, not risks.",
+      "D": "Assesses post-implementation limitations, not potential obstacles."
+    },
+    "babok_reference": "KA6 Strategy Analysis – Assess Risks, BABOK v3 §6.3."
+  },
+  {
+    "question_number": 72,
+    "question": "Which BABOK technique uses diagrams to visualize activities, inputs, and outputs in a workflow?",
+    "options": {
+      "A": "Activity Diagram",
+      "B": "State Model",
+      "C": "Entity-Relationship Diagram",
+      "D": "Decision Tree"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Activity Diagrams illustrate control flow among actions and decisions, clarifying responsibilities and handoffs.",
+    "why_others_are_wrong": {
+      "B": "Shows object states, not activity flow.",
+      "C": "Depicts data entities, not processes.",
+      "D": "Shows decision logic, not activities."
+    },
+    "babok_reference": "Technique: Process Modelling – Activity Diagrams, BABOK v3 §10.40."
+  },
+  {
+    "question_number": 73,
+    "question": "Which BABOK task ensures stakeholders have a shared understanding of elicited information?",
+    "options": {
+      "A": "Confirm Elicitation Results",
+      "B": "Conduct Elicitation",
+      "C": "Communicate Business Analysis Information",
+      "D": "Manage Stakeholder Collaboration"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Confirm Elicitation Results compares captured information with stakeholder expectations to correct misunderstandings early.",
+    "why_others_are_wrong": {
+      "B": "Gathers information, not verifies it.",
+      "C": "Covers ongoing communication beyond elicitation scope.",
+      "D": "Manages relationships, not verification."
+    },
+    "babok_reference": "KA4 Elicitation and Collaboration – Confirm Elicitation Results, BABOK v3 §4.3."
+  },
+  {
+    "question_number": 74,
+    "question": "Which BABOK technique is most effective for understanding complex stakeholder motivations?",
+    "options": {
+      "A": "Interviews",
+      "B": "Surveys",
+      "C": "Workshops",
+      "D": "Observation"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Interviews provide deep, personalized insights into stakeholder goals, concerns, and motivations.",
+    "why_others_are_wrong": {
+      "B": "Captures quantitative data, not depth of motivation.",
+      "C": "Focuses on consensus, not individual drivers.",
+      "D": "Observes behavior, not internal reasoning."
+    },
+    "babok_reference": "Technique: Interviews, BABOK v3 §10.27."
+  },
+  {
+    "question_number": 75,
+    "question": "Which BABOK technique identifies the logical relationships among requirements or concepts?",
+    "options": {
+      "A": "Concept Modelling",
+      "B": "Affinity Diagramming",
+      "C": "Mind Mapping",
+      "D": "Process Modelling"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Concept Modelling defines and connects business concepts to establish shared meaning across stakeholders.",
+    "why_others_are_wrong": {
+      "B": "Groups ideas by similarity, not semantics.",
+      "C": "Shows idea hierarchy, not formal relationships.",
+      "D": "Depicts workflow, not conceptual structure."
+    },
+    "babok_reference": "Technique: Concept Modelling, BABOK v3 §10.11."
+  },
+  {
+    "question_number": 76,
+    "question": "Which BABOK technique identifies external events that could affect the solution and categorizes them by probability and impact?",
+    "options": {
+      "A": "Risk Analysis and Management",
+      "B": "SWOT Analysis",
+      "C": "Root Cause Analysis",
+      "D": "Decision Tree"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Risk Analysis and Management evaluates potential events, estimating their likelihood and impact to plan mitigation actions.",
+    "why_others_are_wrong": {
+      "B": "Assesses internal/external factors broadly, not specific risks.",
+      "C": "Finds causes of problems, not potential risks.",
+      "D": "Models logic, not uncertainties."
+    },
+    "babok_reference": "Technique: Risk Analysis and Management, BABOK v3 §10.39."
+  },
+  {
+    "question_number": 77,
+    "question": "Which BABOK knowledge area focuses on defining what tasks will be performed and how outcomes will be measured?",
+    "options": {
+      "A": "Business Analysis Planning and Monitoring",
+      "B": "Strategy Analysis",
+      "C": "Requirements Life Cycle Management",
+      "D": "Elicitation and Collaboration"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Business Analysis Planning and Monitoring determines how BA work will be performed, monitored, and reported.",
+    "why_others_are_wrong": {
+      "B": "Focuses on strategy definition, not task planning.",
+      "C": "Manages requirement lifecycle, not planning.",
+      "D": "Covers stakeholder communication, not methodology setup."
+    },
+    "babok_reference": "KA3 Business Analysis Planning and Monitoring, BABOK v3 §§3.1–3.6."
+  },
+  {
+    "question_number": 78,
+    "question": "Which BABOK technique identifies metrics used to assess whether objectives have been met after implementation?",
+    "options": {
+      "A": "Performance Measurement",
+      "B": "Metrics and KPIs",
+      "C": "Benchmarking",
+      "D": "Value Stream Mapping"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Metrics and KPIs define measurable indicators of success used in post-implementation evaluation.",
+    "why_others_are_wrong": {
+      "A": "Generic phrase; BABOK’s defined term is Metrics and KPIs.",
+      "C": "Compares externally, not internal performance measurement.",
+      "D": "Visualizes process flow, not metrics."
+    },
+    "babok_reference": "Technique: Metrics and Key Performance Indicators, BABOK v3 §10.29."
+  },
+  {
+    "question_number": 79,
+    "question": "Which BABOK technique visualizes dependencies among requirements or work items?",
+    "options": {
+      "A": "Traceability Matrix",
+      "B": "Requirements Architecture Diagram",
+      "C": "Dependency Mapping",
+      "D": "Concept Modelling"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "A Traceability Matrix links requirements to related artifacts and dependencies to ensure coverage and consistency.",
+    "why_others_are_wrong": {
+      "B": "Shows structure, not explicit dependency mapping.",
+      "C": "Not a formal BABOK technique name.",
+      "D": "Depicts conceptual relations, not traceability."
+    },
+    "babok_reference": "KA5 Requirements Life Cycle Management – Trace Requirements, BABOK v3 §5.2."
+  },
+  {
+    "question_number": 80,
+    "question": "Which BABOK technique helps visually organize information radiating from a central idea?",
+    "options": {
+      "A": "Mind Mapping",
+      "B": "Affinity Diagramming",
+      "C": "Concept Modelling",
+      "D": "Brainstorming"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Mind Mapping visually structures related concepts around a central topic, promoting creativity and recall.",
+    "why_others_are_wrong": {
+      "B": "Groups ideas by theme, not radial hierarchy.",
+      "C": "Formalizes business semantics, not ideation.",
+      "D": "Generates ideas, not organizes them."
+    },
+    "babok_reference": "Technique: Mind Mapping, BABOK v3 §10.30."
+  },
+  {
+    "question_number": 81,
+    "question": "Which BABOK technique visually represents possible outcomes and decisions in a branching structure?",
+    "options": {
+      "A": "Decision Tree",
+      "B": "Decision Table",
+      "C": "Process Model",
+      "D": "Use Case Diagram"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Decision Trees show conditional logic paths and outcomes for each decision branch, aiding in evaluating alternatives.",
+    "why_others_are_wrong": {
+      "B": "Lists conditions and actions in tabular format, not branching.",
+      "C": "Depicts workflow, not decision logic.",
+      "D": "Shows actor-system interactions, not conditional branches."
+    },
+    "babok_reference": "Technique: Decision Modelling – Decision Tree, BABOK v3 §10.17."
+  },
+  {
+    "question_number": 82,
+    "question": "Which BABOK technique is used to explore possible solutions through structured creative sessions?",
+    "options": {
+      "A": "Brainstorming",
+      "B": "Affinity Diagramming",
+      "C": "Workshops",
+      "D": "Mind Mapping"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Brainstorming promotes the free flow of ideas to identify potential solutions or causes collaboratively.",
+    "why_others_are_wrong": {
+      "B": "Organizes ideas post-brainstorming, not generates them.",
+      "C": "Facilitates consensus building, not ideation itself.",
+      "D": "Visualizes ideas, not initiates them."
+    },
+    "babok_reference": "Technique: Brainstorming, BABOK v3 §10.7."
+  },
+  {
+    "question_number": 83,
+    "question": "Which BABOK technique is best for validating requirements through simulation of real user interactions?",
+    "options": {
+      "A": "Prototyping",
+      "B": "Observation",
+      "C": "Workshops",
+      "D": "Scenarios and Use Cases"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Prototyping provides a tangible, testable representation of a solution for feedback and validation with stakeholders.",
+    "why_others_are_wrong": {
+      "B": "Captures current behavior, not validates new designs.",
+      "C": "Facilitates discussion but lacks visual simulation.",
+      "D": "Describes interactions textually, not visually."
+    },
+    "babok_reference": "Technique: Prototyping, BABOK v3 §10.37."
+  },
+  {
+    "question_number": 84,
+    "question": "Which BABOK technique identifies areas where value is created, wasted, or delayed?",
+    "options": {
+      "A": "Value Stream Mapping",
+      "B": "Process Modelling",
+      "C": "Gap Analysis",
+      "D": "Root Cause Analysis"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Value Stream Mapping visualizes value creation from request to delivery, highlighting waste and bottlenecks.",
+    "why_others_are_wrong": {
+      "B": "Shows processes, not value contribution.",
+      "C": "Compares states, not value flow.",
+      "D": "Finds problem causes, not value inefficiencies."
+    },
+    "babok_reference": "Technique: Value Stream Mapping, BABOK v3 §10.49."
+  },
+  {
+    "question_number": 85,
+    "question": "Which BABOK technique ensures that all requirements align with overall business objectives?",
+    "options": {
+      "A": "Requirements Traceability Matrix",
+      "B": "Balanced Scorecard",
+      "C": "Business Case",
+      "D": "Strategy Analysis"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "The Traceability Matrix confirms each requirement supports a higher-level business need or objective.",
+    "why_others_are_wrong": {
+      "B": "Evaluates performance metrics, not requirements alignment.",
+      "C": "Justifies the initiative, not trace alignment.",
+      "D": "Defines goals, not tracks requirement linkage."
+    },
+    "babok_reference": "KA5 Requirements Life Cycle Management – Trace Requirements, BABOK v3 §5.2."
+  },
+  {
+    "question_number": 86,
+    "question": "Which BABOK task helps determine how requirements changes are assessed and approved?",
+    "options": {
+      "A": "Manage Requirements Changes",
+      "B": "Plan Requirements Management Process",
+      "C": "Plan Business Analysis Governance",
+      "D": "Maintain Requirements"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Plan Business Analysis Governance defines the decision-making and change-control process for requirements approval and prioritization.",
+    "why_others_are_wrong": {
+      "A": "Outdated terminology — managed through governance in BABOK v3.",
+      "B": "Planning process describes management scope, not governance.",
+      "D": "Maintains accuracy, not control."
+    },
+    "babok_reference": "KA3 Business Analysis Planning and Monitoring – Plan Business Analysis Governance, BABOK v3 §3.4."
+  },
+  {
+    "question_number": 87,
+    "question": "Which BABOK technique identifies dependencies between solution components?",
+    "options": {
+      "A": "Functional Decomposition",
+      "B": "Process Modelling",
+      "C": "Interface Analysis",
+      "D": "Traceability Matrix"
+    },
+    "correct_answer": "D",
+    "babok_explanation": "Traceability identifies and manages dependencies between requirements, designs, and solution elements.",
+    "why_others_are_wrong": {
+      "A": "Breaks down functionality, doesn’t manage dependencies.",
+      "B": "Shows flows, not relationships.",
+      "C": "Analyzes external interfaces, not requirement linkage."
+    },
+    "babok_reference": "KA5 Requirements Life Cycle Management – Trace Requirements, BABOK v3 §5.2."
+  },
+  {
+    "question_number": 88,
+    "question": "Which BABOK technique uses structured diagrams to define relationships between entities in a system?",
+    "options": {
+      "A": "Data Modelling",
+      "B": "Entity-Relationship Diagram",
+      "C": "State Modelling",
+      "D": "Process Modelling"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Entity-Relationship Diagrams (ERDs) visually depict data entities, attributes, and relationships within a system.",
+    "why_others_are_wrong": {
+      "A": "Broad technique; ERD is the specific diagram form.",
+      "C": "Models state transitions, not data structures.",
+      "D": "Depicts workflow, not data linkage."
+    },
+    "babok_reference": "Technique: Data Modelling – ERD, BABOK v3 §10.13."
+  },
+  {
+    "question_number": 89,
+    "question": "Which BABOK knowledge area ensures requirements remain relevant and aligned throughout the project?",
+    "options": {
+      "A": "Requirements Life Cycle Management",
+      "B": "Business Analysis Planning and Monitoring",
+      "C": "Solution Evaluation",
+      "D": "Elicitation and Collaboration"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Requirements Life Cycle Management ensures continuous alignment, traceability, and prioritization throughout the initiative.",
+    "why_others_are_wrong": {
+      "B": "Plans work; doesn’t manage ongoing alignment.",
+      "C": "Evaluates implemented solutions, not requirements.",
+      "D": "Handles stakeholder communication, not lifecycle maintenance."
+    },
+    "babok_reference": "KA5 Requirements Life Cycle Management, BABOK v3 §§5.1–5.5."
+  },
+  {
+    "question_number": 90,
+    "question": "Which BABOK technique examines interactions between a solution and its external systems?",
+    "options": {
+      "A": "Interface Analysis",
+      "B": "Process Modelling",
+      "C": "Functional Decomposition",
+      "D": "Concept Modelling"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Interface Analysis identifies and defines points of interaction between the solution and external entities or systems.",
+    "why_others_are_wrong": {
+      "B": "Depicts workflows, not system interactions.",
+      "C": "Decomposes functions, not interfaces.",
+      "D": "Defines business concepts, not integrations."
+    },
+    "babok_reference": "Technique: Interface Analysis, BABOK v3 §10.28."
+  },
+  {
+    "question_number": 91,
+    "question": "Which BABOK technique identifies and ranks alternatives based on defined criteria?",
+    "options": {
+      "A": "Decision Analysis",
+      "B": "Risk Analysis",
+      "C": "Benchmarking",
+      "D": "Gap Analysis"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Decision Analysis evaluates solution alternatives using structured criteria such as cost, risk, and value.",
+    "why_others_are_wrong": {
+      "B": "Assesses uncertainty, not choices.",
+      "C": "Compares performance, not decisions.",
+      "D": "Identifies gaps, not evaluates options."
+    },
+    "babok_reference": "Technique: Decision Analysis, BABOK v3 §10.16."
+  },
+  {
+    "question_number": 92,
+    "question": "Which BABOK technique identifies how information flows through an organization?",
+    "options": {
+      "A": "Data Flow Diagrams",
+      "B": "Process Modelling",
+      "C": "Value Stream Mapping",
+      "D": "Organizational Modelling"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Data Flow Diagrams (DFDs) show data movement between processes, data stores, and external entities.",
+    "why_others_are_wrong": {
+      "B": "Depicts task flows, not data movement.",
+      "C": "Visualizes value creation, not data transfer.",
+      "D": "Defines structure, not data flow."
+    },
+    "babok_reference": "Technique: Data Flow Diagram, BABOK v3 §10.14."
+  },
+  {
+    "question_number": 93,
+    "question": "Which BABOK task involves identifying stakeholders impacted by a potential change?",
+    "options": {
+      "A": "Plan Stakeholder Engagement",
+      "B": "Assess Current State",
+      "C": "Define Change Strategy",
+      "D": "Prepare for Elicitation"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Plan Stakeholder Engagement identifies individuals and groups affected by the change and plans effective collaboration.",
+    "why_others_are_wrong": {
+      "B": "Focuses on current-state analysis, not stakeholder mapping.",
+      "C": "Defines how to implement change, not who is impacted.",
+      "D": "Identifies participants, not engagement strategy."
+    },
+    "babok_reference": "KA3 Plan Stakeholder Engagement, BABOK v3 §3.2."
+  },
+  {
+    "question_number": 94,
+    "question": "Which BABOK technique evaluates multiple options against weighted decision criteria?",
+    "options": {
+      "A": "Weighted Ranking Matrix",
+      "B": "SWOT Analysis",
+      "C": "Benchmarking",
+      "D": "Mind Mapping"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Weighted Ranking assigns scores to options based on predefined criteria to select the most suitable alternative.",
+    "why_others_are_wrong": {
+      "B": "Analyzes environment, not choices.",
+      "C": "Compares performance, not alternatives.",
+      "D": "Visualizes concepts, not evaluates decisions."
+    },
+    "babok_reference": "Technique: Decision Analysis – Weighted Ranking, BABOK v3 §10.16."
+  },
+  {
+    "question_number": 95,
+    "question": "Which BABOK technique documents rules that define or constrain business behavior?",
+    "options": {
+      "A": "Business Rules Analysis",
+      "B": "Decision Modelling",
+      "C": "Process Modelling",
+      "D": "Concept Modelling"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Business Rules Analysis defines policies and constraints governing business operations and decisions.",
+    "why_others_are_wrong": {
+      "B": "Models logic flow, not explicit rules.",
+      "C": "Shows processes, not behavioral constraints.",
+      "D": "Defines terms, not rules."
+    },
+    "babok_reference": "Technique: Business Rules Analysis, BABOK v3 §10.10."
+  },
+  {
+    "question_number": 96,
+    "question": "Which BABOK technique helps break down high-level concepts into smaller, more manageable parts?",
+    "options": {
+      "A": "Functional Decomposition",
+      "B": "Process Modelling",
+      "C": "Mind Mapping",
+      "D": "Affinity Diagramming"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Functional Decomposition splits complex concepts or functions into smaller, logical components for analysis and design.",
+    "why_others_are_wrong": {
+      "B": "Describes activities, not decomposition.",
+      "C": "Shows ideas hierarchically but lacks functional linkage.",
+      "D": "Groups ideas thematically, not hierarchically."
+    },
+    "babok_reference": "Technique: Functional Decomposition, BABOK v3 §10.19."
+  },
+  {
+    "question_number": 97,
+    "question": "Which BABOK task evaluates if the delivered solution meets stakeholder and business objectives?",
+    "options": {
+      "A": "Measure Solution Performance",
+      "B": "Assess Solution Limitations",
+      "C": "Assess Enterprise Limitations",
+      "D": "Evaluate Solution Performance"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Measure Solution Performance assesses how well the implemented solution achieves desired business outcomes.",
+    "why_others_are_wrong": {
+      "B": "Evaluates issues within the solution, not measurement.",
+      "C": "Evaluates organizational barriers, not solution success.",
+      "D": "Not a defined BABOK task."
+    },
+    "babok_reference": "KA8 Solution Evaluation – Measure Solution Performance, BABOK v3 §8.1."
+  },
+  {
+    "question_number": 98,
+    "question": "Which BABOK technique visually compares current and desired performance levels using charts or dashboards?",
+    "options": {
+      "A": "Metrics and KPIs",
+      "B": "Benchmarking",
+      "C": "Balanced Scorecard",
+      "D": "Trend Analysis"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Balanced Scorecards track progress toward goals using a mix of financial, customer, process, and growth indicators.",
+    "why_others_are_wrong": {
+      "A": "Defines measures, not visual performance tracking.",
+      "B": "Compares externally, not monitors internally.",
+      "D": "Analyzes trends but not multi-perspective performance."
+    },
+    "babok_reference": "Technique: Balanced Scorecard, BABOK v3 §10.3."
+  },
+  {
+    "question_number": 99,
+    "question": "Which BABOK technique identifies how well stakeholder needs are being met post-implementation?",
+    "options": {
+      "A": "Survey or Questionnaire",
+      "B": "Observation",
+      "C": "Focus Group",
+      "D": "Prototyping"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Surveys and questionnaires gather structured feedback from stakeholders on satisfaction and performance perceptions.",
+    "why_others_are_wrong": {
+      "B": "Observes behavior, doesn’t collect subjective feedback.",
+      "C": "Facilitates discussions, not broad measurement.",
+      "D": "Validates designs pre-implementation, not post."
+    },
+    "babok_reference": "Technique: Survey or Questionnaire, BABOK v3 §10.46."
+  },
+  {
+    "question_number": 100,
+    "question": "Which BABOK knowledge area is primarily concerned with measuring solution performance and recommending improvements?",
+    "options": {
+      "A": "Solution Evaluation",
+      "B": "Requirements Life Cycle Management",
+      "C": "Strategy Analysis",
+      "D": "Elicitation and Collaboration"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Solution Evaluation ensures the implemented solution meets needs and identifies actions to maximize business value.",
+    "why_others_are_wrong": {
+      "B": "Manages requirements, not solution outcomes.",
+      "C": "Focuses on planning future initiatives, not evaluation.",
+      "D": "Engages stakeholders, not measures performance."
+    },
+    "babok_reference": "KA8 Solution Evaluation, BABOK v3 §§8.1–8.5."
+  },
+  {
+    "question_number": 101,
+    "question": "You are the business analyst for your organization. You want to use a requirements elicitation technique to produce a broad set of options for an identified problem. You want the stakeholders to help you identify options, factors that affect the solution, any possible delays in the solution implementation, and ideas for creating a solution. Which of the following requirements elicitation activities would best satisfy these requirements?",
+    "options": {
+      "A": "Benchmarking",
+      "B": "Brainstorming",
+      "C": "Data Flow Diagrams",
+      "D": "Business Rules Analysis"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Brainstorming is used to generate creative ideas and identify possible solutions collaboratively. It is especially useful when exploring options and constraints around a problem space.",
+    "why_others_are_wrong": {
+      "A": "Benchmarking compares practices, not generates ideas.",
+      "C": "Data Flow Diagrams model data movement, not elicit ideas.",
+      "D": "Business Rules Analysis defines rules, not identifies solution options."
+    },
+    "babok_reference": "Technique: Brainstorming, BABOK v3 §10.7."
+  },
+  {
+    "question_number": 103,
+    "question": "There are four inputs to the Plan Business Analysis Activities. Which one of the following is NOT an input to the process?",
+    "options": {
+      "A": "List of identified risks",
+      "B": "Organizational Process Assets",
+      "C": "Business Analysis Approach",
+      "D": "Stakeholder List, Roles, and Responsibilities"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Identified risks are not listed as a direct input to Plan Business Analysis Activities. The valid inputs include BA approach, stakeholder list, governance, and performance metrics.",
+    "why_others_are_wrong": {
+      "B": "OPA provides templates and standards for planning activities.",
+      "C": "The BA approach defines methods and timing of analysis.",
+      "D": "Stakeholder list identifies participants for planning."
+    },
+    "babok_reference": "KA3 Business Analysis Planning and Monitoring – Plan Business Analysis Approach, BABOK v3 §3.1."
+  },
+  {
+    "question_number": 104,
+    "question": "The creative thinking process has three values to determine the effectiveness of the process. Which one of the following is NOT a measurement of effective creative thinking?",
+    "options": {
+      "A": "Application of new ideas to resolve existing problems",
+      "B": "Generation of a predetermined number of new ideas for a business solution",
+      "C": "Willingness of stakeholders to accept new approaches",
+      "D": "The successful generation and productive consideration of new ideas"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Creative thinking effectiveness is evaluated by quality and applicability of ideas, not the quantity. BABOK emphasizes idea relevance over numeric generation.",
+    "why_others_are_wrong": {
+      "A": "Represents actual application of creativity.",
+      "C": "Reflects stakeholder openness to innovation.",
+      "D": "Indicates success in producing and evaluating useful ideas."
+    },
+    "babok_reference": "Technique: Brainstorming and Creative Thinking, BABOK v3 §10.7."
+  },
+  {
+    "question_number": 106,
+    "question": "There are four inputs to writing the business case as part of Enterprise Analysis. Which one of the following is NOT an input to writing the business case?",
+    "options": {
+      "A": "Business Need",
+      "B": "Assumptions and Constraints",
+      "C": "Requirements Verification",
+      "D": "Stakeholder Concerns"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Requirements Verification occurs after the business case is written. The inputs to business case development are business need, assumptions, constraints, and stakeholder concerns.",
+    "why_others_are_wrong": {
+      "A": "Defines the reason for change.",
+      "B": "Defines influencing conditions.",
+      "D": "Reflects stakeholder perspectives impacting justification."
+    },
+    "babok_reference": "KA6 Strategy Analysis – Define Change Strategy, BABOK v3 §6.4."
+  },
+  {
+    "question_number": 111,
+    "question": "You are the business analyst for your organization and are working on a solution connecting several databases to a web application. You are concerned that the databases may not be operable with the software solution a programmer is recommending. Which requirements elicitation technique can help you determine the interoperability of the software, databases, and web application?",
+    "options": {
+      "A": "Benchmarking",
+      "B": "Interviews",
+      "C": "Interface Analysis",
+      "D": "Usage Considerations"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Interface Analysis identifies points of interaction between components to assess compatibility and data exchange requirements.",
+    "why_others_are_wrong": {
+      "A": "Compares processes, not interfaces.",
+      "B": "Gathers stakeholder input, not system-level dependencies.",
+      "D": "Analyzes conditions of use, not interoperability."
+    },
+    "babok_reference": "Technique: Interface Analysis, BABOK v3 §10.28."
+  },
+  {
+    "question_number": 112,
+    "question": "Holly is the business analyst for her organization. Management has asked her to define solution alternatives and describe the expected business benefits, supported with data and statistics. What type of document is management asking Holly to create?",
+    "options": {
+      "A": "Feasibility Study",
+      "B": "Vision Statement",
+      "C": "Project Scope Statement",
+      "D": "Current State Assessment"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "A Feasibility Study evaluates solution options based on cost, benefit, and risk to justify a preferred choice.",
+    "why_others_are_wrong": {
+      "B": "Describes goals, not comparative feasibility.",
+      "C": "Defines scope, not assesses options.",
+      "D": "Analyzes current operations, not solution viability."
+    },
+    "babok_reference": "Technique: Feasibility Analysis, BABOK v3 §10.18."
+  },
+  {
+    "question_number": 117,
+    "question": "What type of requirements elicitation technique is the Delphi Technique?",
+    "options": {
+      "A": "Survey",
+      "B": "Workshop",
+      "C": "Round Table",
+      "D": "Prototyping"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "The Delphi Technique is a form of survey where experts anonymously respond to questionnaires in multiple rounds to reach consensus.",
+    "why_others_are_wrong": {
+      "B": "Workshops involve face-to-face collaboration, not anonymity.",
+      "C": "Round Tables are discussions, not structured consensus methods.",
+      "D": "Prototyping visualizes designs, not gathers expert feedback."
+    },
+    "babok_reference": "Technique: Survey or Questionnaire (Delphi adaptation), BABOK v3 §10.46."
+  },
+  {
+    "question_number": 121,
+    "question": "Which of the following charts is a quality control tool to show categories of defects?",
+    "options": {
+      "A": "Pareto Chart",
+      "B": "RACI Chart",
+      "C": "Gantt Chart",
+      "D": "RAM Chart"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Pareto Charts rank defect categories to identify those causing the most significant issues, aligning with the 80/20 principle.",
+    "why_others_are_wrong": {
+      "B": "Defines roles, not quality data.",
+      "C": "Shows schedule, not defects.",
+      "D": "Maps responsibilities, not quality categories."
+    },
+    "babok_reference": "Technique: Metrics and KPIs – Quality Control Charts, BABOK v3 §10.29."
+  },
+  {
+    "question_number": 125,
+    "question": "Which one of the following diagrams visualizes the result of a root cause analysis study?",
+    "options": {
+      "A": "Activity Diagram",
+      "B": "State Diagram",
+      "C": "Tornado Diagram",
+      "D": "Cause-and-Effect Diagram"
+    },
+    "correct_answer": "D",
+    "babok_explanation": "The Cause-and-Effect Diagram (Fishbone/Ishikawa) identifies root causes contributing to a problem, visually grouping related factors.",
+    "why_others_are_wrong": {
+      "A": "Models workflows, not causes.",
+      "B": "Shows state transitions, not relationships.",
+      "C": "Compares sensitivities, not causal roots."
+    },
+    "babok_reference": "Technique: Root Cause Analysis, BABOK v3 §10.41."
+  },
+  {
+    "question_number": 129,
+    "question": "Which of the following involves defining threats, determining vulnerabilities, and devising countermeasures?",
+    "options": {
+      "A": "Qualitative Risk Analysis",
+      "B": "Risk Analysis",
+      "C": "Risk Assessment",
+      "D": "Quantitative Risk Analysis"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Qualitative Risk Analysis categorizes risks based on likelihood and impact to prioritize mitigation strategies.",
+    "why_others_are_wrong": {
+      "B": "Generic term, lacks the qualitative aspect.",
+      "C": "Overall process including identification and response.",
+      "D": "Uses numerical data, not qualitative evaluation."
+    },
+    "babok_reference": "Technique: Risk Analysis and Management, BABOK v3 §10.39."
+  },
+  {
+    "question_number": 133,
+    "question": "Which of the following can be an effective tool during quality control to determine how the problem occurred?",
+    "options": {
+      "A": "Rework",
+      "B": "Trend Analysis",
+      "C": "Flowcharting",
+      "D": "Pareto Diagram"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Flowcharts visualize process steps to locate points of failure and understand the sequence leading to issues.",
+    "why_others_are_wrong": {
+      "A": "Rework fixes issues, doesn’t analyze causes.",
+      "B": "Shows performance trends, not process breakdowns.",
+      "D": "Ranks issues, not traces the root path."
+    },
+    "babok_reference": "Technique: Process Modelling (Flowcharting), BABOK v3 §10.40."
+  },
+  {
+    "question_number": 137,
+    "question": "Which of the following is a narrative description of the work required for the project?",
+    "options": {
+      "A": "Contract Work Breakdown Structure (CWBS)",
+      "B": "Work Breakdown Structure (WBS)",
+      "C": "Contract Statement of Work (CSOW)",
+      "D": "Statement of Work (SOW)"
+    },
+    "correct_answer": "D",
+    "babok_explanation": "The Statement of Work defines in narrative form the deliverables, responsibilities, and project objectives.",
+    "why_others_are_wrong": {
+      "A": "Breaks down contract scope, not describes it narratively.",
+      "B": "Shows structure, not narrative detail.",
+      "C": "Used in contracting, not business analysis context."
+    },
+    "babok_reference": "Technique: Business Case and Scope Definition, BABOK v3 §6.2."
+  },
+  {
+    "question_number": 140,
+    "question": "Which of the following is a visual decomposition of program scope and required resources?",
+    "options": {
+      "A": "Resource Breakdown Structure (RBS)",
+      "B": "Product Breakdown Structure (PBS)",
+      "C": "Budgeted Cost of Work Scheduled (BCWS)",
+      "D": "Work Breakdown Structure (WBS)"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "The Resource Breakdown Structure hierarchically displays resources required by work package.",
+    "why_others_are_wrong": {
+      "B": "Decomposes deliverables, not resources.",
+      "C": "Tracks cost, not scope.",
+      "D": "Decomposes work, not resources."
+    },
+    "babok_reference": "Technique: Organizational Modelling, BABOK v3 §10.32."
+  },
+  {
+    "question_number": 144,
+    "question": "Which of the following techniques involves coordinating and collaborating with other credible sources in risk?",
+    "options": {
+      "A": "Risk Identification",
+      "B": "Risk Management",
+      "C": "Risk Communication",
+      "D": "Risk Analysis"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Risk Communication ensures consistent understanding of risks among all stakeholders and promotes collaborative mitigation.",
+    "why_others_are_wrong": {
+      "A": "Identifies risks, doesn’t communicate them.",
+      "B": "Manages mitigation, not collaboration.",
+      "D": "Analyzes probability, not dialogue."
+    },
+    "babok_reference": "Technique: Risk Analysis and Management, BABOK v3 §10.39."
+  },
+  {
+    "question_number": 145,
+    "question": "Which document is created first after project is awarded and SOW is handed to the project manager?",
+    "options": {
+      "A": "Work Breakdown Structure (WBS)",
+      "B": "WBS Dictionary",
+      "C": "Project Scope Statement",
+      "D": "Project Charter"
+    },
+    "correct_answer": "D",
+    "babok_explanation": "The Project Charter formally authorizes the project and appoints the project manager.",
+    "why_others_are_wrong": {
+      "A": "Created after charter approval.",
+      "B": "Supports WBS, not initial document.",
+      "C": "Derived from charter."
+    },
+    "babok_reference": "Technique: Business Case & Governance, BABOK v3 §3.4."
+  },
+  {
+    "question_number": 150,
+    "question": "Which chart ensures roles and responsibilities of those involved in a task are tracked?",
+    "options": {
+      "A": "Pie Chart",
+      "B": "Line Chart",
+      "C": "RACI Chart",
+      "D": "Gantt Chart"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "A RACI Chart clarifies roles (Responsible, Accountable, Consulted, Informed) for project tasks.",
+    "why_others_are_wrong": {
+      "A": "Shows distribution, not roles.",
+      "B": "Depicts trends, not responsibilities.",
+      "D": "Tracks schedule, not accountability."
+    },
+    "babok_reference": "Technique: Organizational Modelling – RACI, BABOK v3 §10.32."
+  },
+  {
+    "question_number": 150,
+    "question": "Which of the following charts is important to ensure that the roles and responsibilities of those involved in a task are tracked?",
+    "options": {
+      "A": "Pie chart",
+      "B": "Line chart",
+      "C": "RACI chart",
+      "D": "Gantt chart"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "A RACI chart (Responsible, Accountable, Consulted, Informed) identifies roles and responsibilities for tasks or deliverables. It is part of stakeholder analysis and governance planning activities to clarify accountability and avoid overlaps in responsibility.",
+    "why_others_are_wrong": {
+      "A": "Pie charts visualize proportions or percentages — not responsibilities.",
+      "B": "Line charts show trends over time, not role assignments.",
+      "D": "Gantt charts show schedules and dependencies, not ownership or roles."
+    },
+    "babok_reference": "BABOK v3 — Section 3.3 (Plan Business Analysis Governance), Task: Define Roles and Responsibilities"
+  },
+  {
+    "question_number": 153,
+    "question": "Which of the following displays the relative importance of defects?",
+    "options": {
+      "A": "Pareto diagram",
+      "B": "User Documentation",
+      "C": "Gantt chart",
+      "D": "Flowchart"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "A Pareto diagram helps identify the most significant factors in a dataset — often used in defect analysis to focus improvement on issues that will yield the greatest benefits (‘80/20 rule’).",
+    "why_others_are_wrong": {
+      "B": "User documentation provides usage information, not defect prioritization.",
+      "C": "Gantt charts represent project schedules, not defect frequency.",
+      "D": "Flowcharts depict process flows, not defect impact or frequency."
+    },
+    "babok_reference": "BABOK v3 — Section 10.42 (Pareto Diagram), Techniques"
+  },
+  {
+    "question_number": 158,
+    "question": "Which of the following is the process of defining and analyzing dangers to individuals, businesses, and government agencies posed by potential natural and human-caused adverse events?",
+    "options": {
+      "A": "Risk analysis",
+      "B": "Risk identification",
+      "C": "Risk management",
+      "D": "Risk communication"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Risk analysis assesses the probability and impact of identified risks. It determines their severity and helps prioritize responses. It’s a component of risk management used during business analysis planning and solution evaluation.",
+    "why_others_are_wrong": {
+      "B": "Risk identification only lists risks, without assessing them.",
+      "C": "Risk management is the overarching process that includes identification, analysis, and mitigation.",
+      "D": "Risk communication ensures stakeholders are informed — not the actual analysis of risk."
+    },
+    "babok_reference": "BABOK v3 — Section 10.44 (Risk Analysis and Management)"
+  },
+  {
+    "question_number": 163,
+    "question": "Which of the following reports is generated whenever the project is slipping off the schedule and includes an explanation of the problem?",
+    "options": {
+      "A": "Status report",
+      "B": "Schedule variance report",
+      "C": "Delay report",
+      "D": "Cost variance report"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "A schedule variance report compares actual progress with planned timelines, highlighting schedule slippages. It provides variance explanations and forms part of performance assessments.",
+    "why_others_are_wrong": {
+      "A": "Status reports summarize progress but do not focus specifically on schedule variance.",
+      "C": "‘Delay report’ is not a standard BABOK reporting artifact.",
+      "D": "Cost variance reports focus on budget performance, not schedule."
+    },
+    "babok_reference": "BABOK v3 — Section 7.4 (Assess Solution Performance), Outputs: Performance Assessment"
+  },
+  {
+    "question_number": 167,
+    "question": "Which of the following directs improvement efforts to those areas that will have the biggest impact?",
+    "options": {
+      "A": "Flowchart",
+      "B": "Gantt chart",
+      "C": "Pareto diagram",
+      "D": "User Documentation"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "A Pareto diagram helps prioritize improvement areas by highlighting causes that contribute most to a problem. Based on the 80/20 principle, it ensures focus on high-impact areas.",
+    "why_others_are_wrong": {
+      "A": "Flowcharts map process steps but don’t prioritize by impact.",
+      "B": "Gantt charts track schedules, not improvement focus.",
+      "D": "User documentation is unrelated to performance improvement analysis."
+    },
+    "babok_reference": "BABOK v3 — Section 10.42 (Pareto Diagram), Techniques"
+  },
+  {
+    "question_number": 168,
+    "question": "Which of the following participants has to keep the minutes and details of the conversation during interviews?",
+    "options": {
+      "A": "Stakeholder",
+      "B": "Scribe",
+      "C": "Business Analyst",
+      "D": "End User"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "A scribe (or note-taker) records key discussion points, decisions, and requirements during interviews or workshops to ensure traceability and accuracy of elicited information.",
+    "why_others_are_wrong": {
+      "A": "Stakeholders provide input, not documentation.",
+      "C": "The BA facilitates and guides the interview — not primarily records.",
+      "D": "End users contribute insights, not minutes."
+    },
+    "babok_reference": "BABOK v3 — Section 4.2 (Conduct Elicitation), Inputs/Guidelines and Tools"
+  },
+  {
+    "question_number": 170,
+    "question": "It shows the history and pattern of variation — a line graph showing data points plotted in order over time. Trend analysis is performed using them.",
+    "options": {
+      "A": "Cause and effect diagram",
+      "B": "Histogram",
+      "C": "Run chart",
+      "D": "Pareto chart"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Run charts display process performance or variation trends over time. They are essential for identifying patterns and supporting continuous improvement in solution performance.",
+    "why_others_are_wrong": {
+      "A": "Cause and effect diagrams show causal relationships, not trends.",
+      "B": "Histograms show frequency distributions, not time sequences.",
+      "D": "Pareto charts prioritize causes, not trends."
+    },
+    "babok_reference": "BABOK v3 — Section 10.47 (Run Chart), Techniques"
+  },
+  {
+    "question_number": 172,
+    "question": "Which of the following captures all activities within a business, including inputs, outputs, and resources?",
+    "options": {
+      "A": "Business scenario",
+      "B": "Business process model",
+      "C": "Business architecture",
+      "D": "Business case"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "A business process model visually represents how business processes function — showing inputs, outputs, and resources used. It is essential for understanding current and future states.",
+    "why_others_are_wrong": {
+      "A": "Business scenarios describe context or use cases, not process flows.",
+      "C": "Business architecture defines capabilities, not detailed processes.",
+      "D": "A business case justifies investment; it doesn’t model process flow."
+    },
+    "babok_reference": "BABOK v3 — Section 10.6 (Process Modelling), Techniques"
+  },
+  {
+    "question_number": 175,
+    "question": "As a program manager, you decided to overlap two phases of your program. Which of the following terms best describes your act?",
+    "options": {
+      "A": "Lead time",
+      "B": "Rolling wave planning",
+      "C": "Fast tracking",
+      "D": "Crashing"
+    },
+    "correct_answer": "C",
+    "babok_explanation": "Fast tracking means overlapping activities or phases that were originally sequential to compress the schedule. It carries risk but shortens duration.",
+    "why_others_are_wrong": {
+      "A": "Lead time refers to elapsed time between processes, not phase overlap.",
+      "B": "Rolling wave planning involves progressive elaboration, not concurrency.",
+      "D": "Crashing adds resources to reduce duration — not overlap."
+    },
+    "babok_reference": "BABOK v3 — Section 3.3 (Plan Business Analysis Approach), Related Techniques"
+  },
+  {
+    "question_number": 177,
+    "question": "________ are timeless events that show progress in the project, typically achieved at the end of a phase.",
+    "options": {
+      "A": "Achievements",
+      "B": "Milestones",
+      "C": "Phases",
+      "D": "Templates"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Milestones mark key achievements or decision points in the project life cycle — used in planning and monitoring activities to assess progress.",
+    "why_others_are_wrong": {
+      "A": "‘Achievements’ is a general term, not a formal project metric.",
+      "C": "Phases are segments of work — milestones occur within them.",
+      "D": "Templates are documentation aids, not performance markers."
+    },
+    "babok_reference": "BABOK v3 — Section 3.5 (Plan Business Analysis Information Management)"
+  },
+  {
+    "question_number": 178,
+    "question": "A process that compares the current project status to the performance measurement baseline to determine if any corrective or preventive actions are needed is called:",
+    "options": {
+      "A": "Monitor and Control Project Work",
+      "B": "Control Schedule",
+      "C": "Perform Integrated Change Control",
+      "D": "Validate Scope"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Monitor and Control Project Work compares actual project performance against planned objectives to identify deviations and determine corrective actions. It ensures alignment with business analysis deliverables and objectives.",
+    "why_others_are_wrong": {
+      "B": "Control Schedule focuses only on schedule variances, not overall project performance.",
+      "C": "Perform Integrated Change Control manages approved changes, not overall monitoring.",
+      "D": "Validate Scope ensures deliverables meet acceptance criteria, not project performance."
+    },
+    "babok_reference": "BABOK v3 — Section 7.4 (Assess Solution Performance)"
+  },
+  {
+    "question_number": 180,
+    "question": "Which of the following charts shows the hierarchical structure of project tasks or elements of work?",
+    "options": {
+      "A": "Organizational Breakdown Structure (OBS)",
+      "B": "Work Breakdown Structure (WBS)",
+      "C": "RACI Chart",
+      "D": "Pareto Chart"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "The Work Breakdown Structure (WBS) decomposes project deliverables into smaller, manageable work packages to facilitate planning, estimation, and tracking.",
+    "why_others_are_wrong": {
+      "A": "OBS depicts reporting relationships, not work decomposition.",
+      "C": "RACI defines responsibility, not work hierarchy.",
+      "D": "Pareto charts prioritize data categories, not project tasks."
+    },
+    "babok_reference": "BABOK v3 — Section 6.2 (Define Future State), Technique: Decomposition"
+  },
+  {
+    "question_number": 182,
+    "question": "Which of the following techniques best identifies how processes actually operate by observing users performing their tasks?",
+    "options": {
+      "A": "Survey",
+      "B": "Observation",
+      "C": "Workshop",
+      "D": "Prototyping"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Observation is used to elicit information by watching end users perform their actual tasks. It helps uncover tacit knowledge and inefficiencies in real-world operations.",
+    "why_others_are_wrong": {
+      "A": "Surveys collect verbal or written input, not direct behavioral data.",
+      "C": "Workshops gather group input, not individual workflow details.",
+      "D": "Prototyping validates future solutions, not existing processes."
+    },
+    "babok_reference": "BABOK v3 — Section 10.34 (Observation), Techniques"
+  },
+  {
+    "question_number": 184,
+    "question": "Which of the following metrics measures how long it takes from the identification of a defect until it is resolved?",
+    "options": {
+      "A": "Mean Time to Detect (MTTD)",
+      "B": "Mean Time to Repair (MTTR)",
+      "C": "Cycle Time",
+      "D": "Lead Time"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Mean Time to Repair (MTTR) measures the average time required to correct a defect or restore a system, a key performance indicator in solution evaluation.",
+    "why_others_are_wrong": {
+      "A": "MTTD measures time to detection, not repair.",
+      "C": "Cycle time tracks total process duration, not issue resolution.",
+      "D": "Lead time covers the total span from request to delivery, not just fix duration."
+    },
+    "babok_reference": "BABOK v3 — Section 10.29 (Metrics and Key Performance Indicators)"
+  },
+  {
+    "question_number": 186,
+    "question": "Which of the following is a structured technique used to analyze the cause-and-effect relationships of factors contributing to a problem?",
+    "options": {
+      "A": "Root Cause Analysis",
+      "B": "Mind Mapping",
+      "C": "Data Modelling",
+      "D": "Process Modelling"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Root Cause Analysis identifies underlying issues that cause observed problems, often using tools like fishbone diagrams or the Five Whys technique.",
+    "why_others_are_wrong": {
+      "B": "Mind Mapping visually organizes ideas, not cause relationships.",
+      "C": "Data Modelling focuses on data structure, not causes.",
+      "D": "Process Modelling represents activities and flows, not root causes."
+    },
+    "babok_reference": "BABOK v3 — Section 10.41 (Root Cause Analysis), Techniques"
+  },
+  {
+    "question_number": 188,
+    "question": "Which of the following describes the process of visually displaying quantitative data using bars of varying height or length?",
+    "options": {
+      "A": "Pareto Chart",
+      "B": "Histogram",
+      "C": "Run Chart",
+      "D": "Scatter Diagram"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "A Histogram visually represents data distribution using bars, useful in analyzing frequency and variability within a dataset.",
+    "why_others_are_wrong": {
+      "A": "Pareto Chart ranks factors by impact; it’s a specialized histogram variant.",
+      "C": "Run Chart tracks data trends over time.",
+      "D": "Scatter Diagram shows correlation between two variables, not frequency."
+    },
+    "babok_reference": "BABOK v3 — Section 10.26 (Histogram), Techniques"
+  },
+  {
+    "question_number": 191,
+    "question": "Which of the following techniques is used to assess the performance of a process or solution by comparing it against industry best practices?",
+    "options": {
+      "A": "Benchmarking",
+      "B": "Root Cause Analysis",
+      "C": "SWOT Analysis",
+      "D": "Gap Analysis"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Benchmarking measures organizational performance against industry leaders or standards to identify opportunities for improvement.",
+    "why_others_are_wrong": {
+      "B": "Root Cause Analysis identifies issues, not external comparisons.",
+      "C": "SWOT analyzes internal and external factors, not benchmarks.",
+      "D": "Gap Analysis compares current and future states, not best practices."
+    },
+    "babok_reference": "BABOK v3 — Section 10.4 (Benchmarking and Market Analysis), Techniques"
+  },
+  {
+    "question_number": 193,
+    "question": "Which of the following tools can best help a business analyst show relationships and dependencies among project activities?",
+    "options": {
+      "A": "Process Flow Diagram",
+      "B": "Network Diagram",
+      "C": "Organizational Chart",
+      "D": "RACI Matrix"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Network Diagrams visually display task dependencies and sequencing, helping in schedule and critical path analysis.",
+    "why_others_are_wrong": {
+      "A": "Process Flow shows activity steps, not task dependencies.",
+      "C": "Organizational Charts show structure, not project sequencing.",
+      "D": "RACI defines roles, not workflow dependencies."
+    },
+    "babok_reference": "BABOK v3 — Section 10.31 (Process Modelling), Techniques"
+  },
+  {
+    "question_number": 195,
+    "question": "Which of the following is a limitation of using observation as a requirements elicitation technique?",
+    "options": {
+      "A": "Stakeholders may alter behavior while being observed",
+      "B": "It produces too much data for analysis",
+      "C": "It is useful only for software projects",
+      "D": "It cannot reveal process inefficiencies"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Observation can be limited by the Hawthorne effect—stakeholders modify behavior when being watched—potentially distorting real processes.",
+    "why_others_are_wrong": {
+      "B": "Data volume can be managed through structured observation.",
+      "C": "Observation applies to all domains, not just software.",
+      "D": "It reveals inefficiencies effectively when done unobtrusively."
+    },
+    "babok_reference": "BABOK v3 — Section 10.34 (Observation), Techniques"
+  },
+  {
+    "question_number": 198,
+    "question": "Which of the following diagrams is most appropriate for showing how data flows through a system from input to output?",
+    "options": {
+      "A": "Context Diagram",
+      "B": "Data Flow Diagram (DFD)",
+      "C": "Use Case Diagram",
+      "D": "Entity Relationship Diagram"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "A Data Flow Diagram (DFD) models the movement of data through processes, data stores, and external entities, illustrating transformation and storage.",
+    "why_others_are_wrong": {
+      "A": "Context Diagrams show system boundaries and actors, not data movement.",
+      "C": "Use Case Diagrams depict interactions, not data flows.",
+      "D": "ERDs show data relationships, not process flow."
+    },
+    "babok_reference": "BABOK v3 — Section 10.14 (Data Flow Diagrams), Techniques"
+  },
+  {
+    "question_number": 200,
+    "question": "Which of the following diagrams is most useful in illustrating the logical sequence of actions and decisions in a business process?",
+    "options": {
+      "A": "Activity Diagram",
+      "B": "Data Flow Diagram",
+      "C": "State Diagram",
+      "D": "Use Case Diagram"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Activity Diagrams visually represent workflows, including actions, decisions, and parallel paths, helping to validate business logic.",
+    "why_others_are_wrong": {
+      "B": "DFDs show data movement, not decision logic.",
+      "C": "State Diagrams model object states, not process flow.",
+      "D": "Use Case Diagrams outline actor interactions, not detailed logic."
+    },
+    "babok_reference": "BABOK v3 — Section 10.2 (Activity Diagram), Techniques"
+  },
+  {
+    "question_number": 201,
+    "question": "Which of the following diagrams is used to model the system’s interactions with external actors to define system boundaries?",
+    "options": {
+      "A": "Use Case Diagram",
+      "B": "Entity Relationship Diagram",
+      "C": "Data Flow Diagram",
+      "D": "Activity Diagram"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Use Case Diagrams represent system boundaries and external actors to describe interactions between users and the system at a high level.",
+    "why_others_are_wrong": {
+      "B": "ERDs show data relationships, not interactions.",
+      "C": "DFDs illustrate data movement, not system boundaries.",
+      "D": "Activity Diagrams model workflows, not actor interactions."
+    },
+    "babok_reference": "BABOK v3 — Section 10.3 (Use Case and Scenarios), Techniques"
+  },
+  {
+    "question_number": 204,
+    "question": "Which of the following defines the conditions, assumptions, and expected results used to confirm that a requirement has been implemented correctly?",
+    "options": {
+      "A": "Acceptance Criteria",
+      "B": "Validation Criteria",
+      "C": "Verification Criteria",
+      "D": "Business Rules"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Acceptance criteria define the conditions that a solution must satisfy to be accepted by stakeholders, ensuring each requirement is testable and complete.",
+    "why_others_are_wrong": {
+      "B": "Validation criteria relate to ensuring requirements meet business needs, not testing acceptance.",
+      "C": "Verification criteria check technical correctness, not stakeholder acceptance.",
+      "D": "Business rules govern behavior, not testing criteria."
+    },
+    "babok_reference": "BABOK v3 — Section 7.6 (Validate Requirements)"
+  },
+  {
+    "question_number": 207,
+    "question": "Which of the following is most appropriate for organizing and visualizing complex business rules and conditions that lead to specific outcomes?",
+    "options": {
+      "A": "Decision Tree",
+      "B": "Data Model",
+      "C": "Use Case Diagram",
+      "D": "Context Diagram"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Decision Trees graphically represent decision logic and conditions that lead to specific outcomes, supporting consistent rule implementation.",
+    "why_others_are_wrong": {
+      "B": "Data Models define entities and relationships, not decision logic.",
+      "C": "Use Case Diagrams show user interactions, not decisions.",
+      "D": "Context Diagrams illustrate boundaries, not rule logic."
+    },
+    "babok_reference": "BABOK v3 — Section 10.17 (Decision Modelling), Techniques"
+  },
+  {
+    "question_number": 209,
+    "question": "Which of the following represents a hierarchy of functional decomposition of a system’s deliverables?",
+    "options": {
+      "A": "Functional Decomposition Diagram",
+      "B": "Organizational Chart",
+      "C": "Gantt Chart",
+      "D": "Context Diagram"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Functional Decomposition breaks down complex processes into smaller, manageable parts, clarifying scope and defining interfaces.",
+    "why_others_are_wrong": {
+      "B": "Organizational Charts show reporting relationships, not function breakdowns.",
+      "C": "Gantt Charts illustrate schedules, not decomposition.",
+      "D": "Context Diagrams define scope boundaries, not detailed functions."
+    },
+    "babok_reference": "BABOK v3 — Section 10.23 (Functional Decomposition), Techniques"
+  },
+  {
+    "question_number": 212,
+    "question": "Which of the following techniques is used to visually represent the voice of the customer and connect it to product requirements?",
+    "options": {
+      "A": "Affinity Diagram",
+      "B": "House of Quality (QFD)",
+      "C": "Pareto Chart",
+      "D": "SWOT Analysis"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "The House of Quality (Quality Function Deployment) translates customer needs into engineering characteristics, aligning design with stakeholder expectations.",
+    "why_others_are_wrong": {
+      "A": "Affinity Diagrams group ideas, not customer-to-requirement mapping.",
+      "C": "Pareto Charts prioritize issues, not map customer needs.",
+      "D": "SWOT analyzes strategic position, not product design linkage."
+    },
+    "babok_reference": "BABOK v3 — Section 10.20 (Metrics and KPI Analysis)"
+  },
+  {
+    "question_number": 216,
+    "question": "Which of the following best describes a risk mitigation strategy?",
+    "options": {
+      "A": "Developing actions to reduce the likelihood or impact of a threat",
+      "B": "Accepting the consequences of a risk event",
+      "C": "Transferring the risk to another party",
+      "D": "Ignoring the risk and proceeding as planned"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Risk mitigation involves taking actions to lower either the probability or impact of a risk to an acceptable level.",
+    "why_others_are_wrong": {
+      "B": "Acceptance means acknowledging the risk, not reducing it.",
+      "C": "Transfer shifts responsibility, not mitigation.",
+      "D": "Ignoring a risk is not a recognized mitigation approach."
+    },
+    "babok_reference": "BABOK v3 — Section 10.39 (Risk Analysis and Management)"
+  },
+  {
+    "question_number": 219,
+    "question": "Which of the following defines what must be true for a process, system, or product to be considered successful?",
+    "options": {
+      "A": "Success Criteria",
+      "B": "Acceptance Criteria",
+      "C": "Validation Criteria",
+      "D": "Performance Metrics"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Success criteria describe measurable outcomes that define when a solution or initiative has achieved its objectives.",
+    "why_others_are_wrong": {
+      "B": "Acceptance criteria validate individual requirements, not overall success.",
+      "C": "Validation criteria ensure requirements meet business needs, not success outcomes.",
+      "D": "Performance metrics track performance, not define success."
+    },
+    "babok_reference": "BABOK v3 — Section 7.6 (Validate Requirements)"
+  },
+  {
+    "question_number": 223,
+    "question": "Which of the following shows the relationship between stakeholder influence and the level of engagement needed from them?",
+    "options": {
+      "A": "Stakeholder Map",
+      "B": "RACI Matrix",
+      "C": "Use Case Diagram",
+      "D": "Mind Map"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Stakeholder Maps visually represent stakeholders by influence, interest, or impact, helping prioritize engagement and communication strategies.",
+    "why_others_are_wrong": {
+      "B": "RACI defines roles and responsibilities, not influence or engagement.",
+      "C": "Use Case Diagrams show actor-system interactions, not relationships.",
+      "D": "Mind Maps structure ideas, not stakeholder dynamics."
+    },
+    "babok_reference": "BABOK v3 — Section 10.44 (Stakeholder List, Map, or Personas)"
+  },
+  {
+    "question_number": 228,
+    "question": "Which of the following is NOT a typical output of the Define Future State task?",
+    "options": {
+      "A": "Business Objectives",
+      "B": "Assumptions and Constraints",
+      "C": "Solution Scope",
+      "D": "Requirements Architecture"
+    },
+    "correct_answer": "D",
+    "babok_explanation": "Requirements Architecture is produced during Requirements Analysis and Design Definition, not during Define Future State.",
+    "why_others_are_wrong": {
+      "A": "Business objectives are central to defining the desired state.",
+      "B": "Assumptions and constraints define limits of the future state.",
+      "C": "Solution scope is established as part of the future state definition."
+    },
+    "babok_reference": "BABOK v3 — Section 6.2 (Define Future State)"
+  },
+  {
+    "question_number": 232,
+    "question": "Which of the following techniques helps in evaluating and prioritizing multiple solution options using a weighted scoring system?",
+    "options": {
+      "A": "Decision Matrix",
+      "B": "Risk Analysis",
+      "C": "Process Modelling",
+      "D": "Benchmarking"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Decision Matrices evaluate solution alternatives using criteria weighted by importance to identify the most suitable option.",
+    "why_others_are_wrong": {
+      "B": "Risk Analysis assesses uncertainty, not solution selection.",
+      "C": "Process Modelling depicts workflows, not evaluation.",
+      "D": "Benchmarking compares with industry standards, not alternatives."
+    },
+    "babok_reference": "BABOK v3 — Section 10.17 (Decision Analysis)"
+  },
+  {
+    "question_number": 236,
+    "question": "Which of the following is a limitation of using surveys for requirements elicitation?",
+    "options": {
+      "A": "Responses may lack depth or context",
+      "B": "They take too long to conduct",
+      "C": "They are expensive to administer",
+      "D": "They cannot be automated"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Surveys collect broad information but lack depth and clarification opportunities, limiting insight into complex requirements.",
+    "why_others_are_wrong": {
+      "B": "Surveys are efficient, not time-consuming.",
+      "C": "They are relatively low-cost compared to workshops.",
+      "D": "Surveys can be easily automated using digital tools."
+    },
+    "babok_reference": "BABOK v3 — Section 10.46 (Surveys or Questionnaires)"
+  },
+  {
+    "question_number": 240,
+    "question": "Which of the following documents ensures that each requirement delivers value and aligns with business goals?",
+    "options": {
+      "A": "Requirements Traceability Matrix",
+      "B": "Requirements Catalogue",
+      "C": "Business Case",
+      "D": "Solution Scope Document"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "A Requirements Traceability Matrix ensures all requirements are aligned to business needs and tracked throughout the lifecycle to ensure value delivery.",
+    "why_others_are_wrong": {
+      "B": "Catalogue lists requirements but doesn’t ensure traceability.",
+      "C": "Business case justifies the initiative, not tracks requirements.",
+      "D": "Solution scope defines boundaries, not requirement linkage."
+    },
+    "babok_reference": "BABOK v3 — Section 5.2 (Requirements Life Cycle Management)"
+  },
+  {
+    "question_number": 247,
+    "question": "Which of the following is an advantage of using prototyping as a requirements technique?",
+    "options": {
+      "A": "Improves stakeholder understanding through visualization",
+      "B": "Eliminates the need for documentation",
+      "C": "Reduces overall project cost automatically",
+      "D": "Guarantees no changes after development starts"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Prototyping helps stakeholders visualize potential solutions, clarifying ambiguous requirements and improving feedback accuracy.",
+    "why_others_are_wrong": {
+      "B": "Documentation is still required for finalized designs.",
+      "C": "It may reduce cost via early validation, but not guaranteed.",
+      "D": "Prototyping supports iterative refinement, not fixed scope."
+    },
+    "babok_reference": "BABOK v3 — Section 10.37 (Prototyping)"
+  },
+  {
+    "question_number": 250,
+    "question": "Which of the following ensures that a requirement is defined to the appropriate level of detail for implementation?",
+    "options": {
+      "A": "Requirements Analysis and Design Definition",
+      "B": "Elicitation and Collaboration",
+      "C": "Strategy Analysis",
+      "D": "Business Case Development"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "The Requirements Analysis and Design Definition (RADD) knowledge area ensures that requirements are refined, validated, and defined in sufficient detail for implementation.",
+    "why_others_are_wrong": {
+      "B": "Elicitation focuses on discovery, not refinement.",
+      "C": "Strategy Analysis defines direction, not detailed requirements.",
+      "D": "Business Case focuses on justification, not detail specification."
+    },
+    "babok_reference": "BABOK v3 — Chapter 7 (Requirements Analysis and Design Definition)"
+  },
+  {
+    "question_number": 251,
+    "question": "Which of the following techniques can be used to identify and understand the relationships between stakeholders?",
+    "options": {
+      "A": "Stakeholder Map",
+      "B": "RACI Matrix",
+      "C": "Process Flow Diagram",
+      "D": "Organization Chart"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "A Stakeholder Map illustrates stakeholder relationships, influence, and interest levels, allowing the BA to plan engagement and collaboration effectively.",
+    "why_others_are_wrong": {
+      "B": "RACI defines roles and responsibilities, not relationship dynamics.",
+      "C": "Process Flow Diagrams describe processes, not stakeholder relationships.",
+      "D": "Organization Charts show reporting lines, not influence or interest."
+    },
+    "babok_reference": "BABOK v3 — Section 10.44 (Stakeholder List, Map, or Personas)"
+  },
+  {
+    "question_number": 254,
+    "question": "Which of the following represents a visual means of analyzing complex problems by organizing ideas and showing relationships between concepts?",
+    "options": {
+      "A": "Mind Mapping",
+      "B": "Root Cause Analysis",
+      "C": "Decision Tree",
+      "D": "Data Modelling"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Mind Mapping organizes and visualizes related ideas around a central concept, improving creativity and comprehension during elicitation or problem analysis.",
+    "why_others_are_wrong": {
+      "B": "Root Cause Analysis identifies problem causes, not idea relationships.",
+      "C": "Decision Trees analyze decision outcomes, not conceptual links.",
+      "D": "Data Modelling defines data structure, not conceptual organization."
+    },
+    "babok_reference": "BABOK v3 — Section 10.33 (Mind Mapping)"
+  },
+  {
+    "question_number": 257,
+    "question": "Which of the following describes the use of a model to represent and validate how a solution will behave before it is built?",
+    "options": {
+      "A": "Prototyping",
+      "B": "Process Modelling",
+      "C": "Root Cause Analysis",
+      "D": "Benchmarking"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Prototyping provides an early, simplified version of the solution to validate requirements and gather feedback before development.",
+    "why_others_are_wrong": {
+      "B": "Process Modelling depicts workflows, not user interactions.",
+      "C": "Root Cause Analysis finds problems, not validates solutions.",
+      "D": "Benchmarking compares performance, not model validation."
+    },
+    "babok_reference": "BABOK v3 — Section 10.37 (Prototyping)"
+  },
+  {
+    "question_number": 260,
+    "question": "Which of the following measures the ability of a process to consistently produce desired outcomes?",
+    "options": {
+      "A": "Capability",
+      "B": "Performance",
+      "C": "Reliability",
+      "D": "Efficiency"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Capability measures an organization’s ability to perform a business activity repeatedly and reliably under controlled conditions.",
+    "why_others_are_wrong": {
+      "B": "Performance measures actual output achieved, not inherent ability.",
+      "C": "Reliability focuses on system uptime, not process capability.",
+      "D": "Efficiency measures resource use, not consistent capability."
+    },
+    "babok_reference": "BABOK v3 — Section 6.1 (Assess Current State)"
+  },
+  {
+    "question_number": 263,
+    "question": "Which of the following is an advantage of using workshops for requirements elicitation?",
+    "options": {
+      "A": "Encourages collaboration and consensus building",
+      "B": "Eliminates the need for documentation",
+      "C": "Minimizes stakeholder participation",
+      "D": "Reduces elicitation cost significantly"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Workshops facilitate face-to-face interaction among stakeholders, enabling consensus building and conflict resolution quickly.",
+    "why_others_are_wrong": {
+      "B": "Workshops still require documentation of results.",
+      "C": "They involve more participation, not less.",
+      "D": "Workshops can be costlier than surveys or interviews."
+    },
+    "babok_reference": "BABOK v3 — Section 10.49 (Workshops)"
+  },
+  {
+    "question_number": 266,
+    "question": "Which of the following is a limitation of using brainstorming as an elicitation technique?",
+    "options": {
+      "A": "Dominant participants may influence outcomes",
+      "B": "It requires large amounts of quantitative data",
+      "C": "It cannot generate creative ideas",
+      "D": "It requires prior validation of results"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Brainstorming can be affected by dominant voices or groupthink, which may stifle diverse idea generation.",
+    "why_others_are_wrong": {
+      "B": "Brainstorming relies on ideas, not quantitative data.",
+      "C": "It is specifically designed for creativity.",
+      "D": "Validation happens after, not during brainstorming."
+    },
+    "babok_reference": "BABOK v3 — Section 10.5 (Brainstorming)"
+  },
+  {
+    "question_number": 270,
+    "question": "Which of the following is the process of breaking down complex business processes or systems into smaller, manageable parts?",
+    "options": {
+      "A": "Functional Decomposition",
+      "B": "Process Modelling",
+      "C": "Gap Analysis",
+      "D": "Benchmarking"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Functional Decomposition divides large processes into smaller, more manageable components to simplify understanding and analysis.",
+    "why_others_are_wrong": {
+      "B": "Process Modelling describes workflows, not decomposition.",
+      "C": "Gap Analysis compares current and future states, not breakdown.",
+      "D": "Benchmarking compares performance, not decomposition."
+    },
+    "babok_reference": "BABOK v3 — Section 10.23 (Functional Decomposition)"
+  },
+  {
+    "question_number": 273,
+    "question": "Which of the following describes a key benefit of using a data model?",
+    "options": {
+      "A": "Clarifies how information is structured and related",
+      "B": "Defines process sequence and decision points",
+      "C": "Documents user interactions with the system",
+      "D": "Visualizes system states over time"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Data Modelling identifies entities, attributes, and relationships, providing structure for data consistency and accuracy in solution design.",
+    "why_others_are_wrong": {
+      "B": "Process Modelling defines workflows, not data relationships.",
+      "C": "Use Case Diagrams document interactions, not data.",
+      "D": "State Diagrams show state transitions, not relationships."
+    },
+    "babok_reference": "BABOK v3 — Section 10.13 (Data Modelling)"
+  },
+  {
+    "question_number": 276,
+    "question": "Which of the following techniques focuses on comparing performance across time to determine if the process is improving or degrading?",
+    "options": {
+      "A": "Trend Analysis",
+      "B": "Pareto Chart",
+      "C": "Fishbone Diagram",
+      "D": "Scatter Diagram"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Trend Analysis examines performance patterns over time to identify improvement or decline, critical for solution evaluation.",
+    "why_others_are_wrong": {
+      "B": "Pareto prioritizes issues, not trends.",
+      "C": "Fishbone identifies causes, not changes over time.",
+      "D": "Scatter shows correlation between variables, not trend progression."
+    },
+    "babok_reference": "BABOK v3 — Section 10.50 (Trend Analysis)"
+  },
+  {
+    "question_number": 280,
+    "question": "Which of the following provides a structured way of evaluating a process or solution by examining its strengths, weaknesses, opportunities, and threats?",
+    "options": {
+      "A": "SWOT Analysis",
+      "B": "Gap Analysis",
+      "C": "Root Cause Analysis",
+      "D": "Benchmarking"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "SWOT Analysis helps assess internal and external factors that affect organizational strategy or initiative performance.",
+    "why_others_are_wrong": {
+      "B": "Gap Analysis compares current vs. future states, not opportunities.",
+      "C": "Root Cause identifies problem sources, not strategic positioning.",
+      "D": "Benchmarking compares against external standards."
+    },
+    "babok_reference": "BABOK v3 — Section 10.48 (SWOT Analysis)"
+  },
+  {
+    "question_number": 283,
+    "question": "Which of the following diagrams is most appropriate for analyzing potential failure points within a process?",
+    "options": {
+      "A": "Fault Tree Analysis",
+      "B": "Data Flow Diagram",
+      "C": "Entity Relationship Diagram",
+      "D": "Gantt Chart"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Fault Tree Analysis identifies and analyzes potential failures within a process or system to mitigate risks effectively.",
+    "why_others_are_wrong": {
+      "B": "DFDs show data movement, not failure modes.",
+      "C": "ERDs model data structure, not failure analysis.",
+      "D": "Gantt charts schedule tasks, not analyze faults."
+    },
+    "babok_reference": "BABOK v3 — Section 10.18 (Fault Tree Analysis)"
+  },
+  {
+    "question_number": 288,
+    "question": "Which of the following defines the process of validating that requirements meet the business need and support the achievement of business objectives?",
+    "options": {
+      "A": "Validate Requirements",
+      "B": "Verify Requirements",
+      "C": "Approve Requirements",
+      "D": "Prioritize Requirements"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Validate Requirements ensures each requirement contributes to business goals and justifies its inclusion in the solution scope.",
+    "why_others_are_wrong": {
+      "B": "Verify checks quality and completeness, not business alignment.",
+      "C": "Approve finalizes sign-off, not validation.",
+      "D": "Prioritize ranks importance, not validates purpose."
+    },
+    "babok_reference": "BABOK v3 — Section 7.6 (Validate Requirements)"
+  },
+  {
+    "question_number": 293,
+    "question": "Which of the following ensures that the selected solution continues to deliver business value after implementation?",
+    "options": {
+      "A": "Measure Solution Performance",
+      "B": "Assess Current State",
+      "C": "Define Future State",
+      "D": "Plan Business Analysis Approach"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Measure Solution Performance evaluates implemented solutions to confirm that expected business value and objectives are achieved.",
+    "why_others_are_wrong": {
+      "B": "Assess Current State analyzes existing problems, not post-implementation value.",
+      "C": "Define Future State sets goals, not measures outcomes.",
+      "D": "Plan BA Approach defines planning strategy, not value validation."
+    },
+    "babok_reference": "BABOK v3 — Section 8.1 (Measure Solution Performance)"
+  },
+  {
+    "question_number": 298,
+    "question": "Which of the following techniques uses structured questioning to uncover assumptions, constraints, and risks during requirements elicitation?",
+    "options": {
+      "A": "Interviews",
+      "B": "Workshops",
+      "C": "Brainstorming",
+      "D": "Root Cause Analysis"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Interviews allow deep exploration of stakeholder perspectives, uncovering implicit assumptions and potential risks.",
+    "why_others_are_wrong": {
+      "B": "Workshops are group-based, less effective for uncovering personal assumptions.",
+      "C": "Brainstorming focuses on idea generation, not detailed exploration.",
+      "D": "Root Cause identifies existing issues, not initial elicitation."
+    },
+    "babok_reference": "BABOK v3 — Section 10.27 (Interviews)"
+  },
+  {
+    "question_number": 301,
+    "question": "Which of the following techniques is most appropriate for validating requirements through simulation or mock-ups of the solution?",
+    "options": {
+      "A": "Prototyping",
+      "B": "Observation",
+      "C": "Brainstorming",
+      "D": "Process Modelling"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Prototyping validates requirements by creating a tangible model or mock-up of the proposed solution, allowing stakeholders to visualize and confirm understanding.",
+    "why_others_are_wrong": {
+      "B": "Observation focuses on studying existing work, not future validation.",
+      "C": "Brainstorming generates ideas but doesn’t test them.",
+      "D": "Process Modelling defines workflows, not UI or solution behavior."
+    },
+    "babok_reference": "BABOK v3 — Section 10.37 (Prototyping)"
+  },
+  {
+    "question_number": 304,
+    "question": "Which of the following techniques identifies and evaluates the probability and impact of potential events that may affect objectives?",
+    "options": {
+      "A": "Risk Analysis and Management",
+      "B": "Root Cause Analysis",
+      "C": "SWOT Analysis",
+      "D": "Benchmarking"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Risk Analysis and Management assesses potential risks, their likelihood, and impact on objectives to plan mitigation or contingency actions.",
+    "why_others_are_wrong": {
+      "B": "Root Cause identifies causes, not probabilities.",
+      "C": "SWOT evaluates strategy, not risk severity.",
+      "D": "Benchmarking compares performance, not risks."
+    },
+    "babok_reference": "BABOK v3 — Section 10.39 (Risk Analysis and Management)"
+  },
+  {
+    "question_number": 307,
+    "question": "Which of the following ensures that a requirement is correctly implemented and meets quality standards?",
+    "options": {
+      "A": "Verify Requirements",
+      "B": "Validate Requirements",
+      "C": "Approve Requirements",
+      "D": "Prioritize Requirements"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Verify Requirements checks that each requirement is well-formed, consistent, and of sufficient quality to proceed to development.",
+    "why_others_are_wrong": {
+      "B": "Validation confirms business value, not quality standards.",
+      "C": "Approval formalizes agreement, not verification.",
+      "D": "Prioritization ranks importance, not correctness."
+    },
+    "babok_reference": "BABOK v3 — Section 7.5 (Verify Requirements)"
+  },
+  {
+    "question_number": 310,
+    "question": "Which BABOK knowledge area involves determining performance measures and analyzing whether implemented solutions deliver expected benefits?",
+    "options": {
+      "A": "Solution Evaluation",
+      "B": "Strategy Analysis",
+      "C": "Requirements Analysis and Design Definition",
+      "D": "Business Analysis Planning and Monitoring"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Solution Evaluation assesses solution performance, identifies limitations, and recommends actions to maximize business value.",
+    "why_others_are_wrong": {
+      "B": "Strategy Analysis defines change strategy, not evaluates results.",
+      "C": "RADD defines requirements, not assesses outcomes.",
+      "D": "Planning & Monitoring focuses on BA governance, not performance."
+    },
+    "babok_reference": "BABOK v3 — Chapter 8 (Solution Evaluation)"
+  },
+  {
+    "question_number": 314,
+    "question": "Which of the following techniques groups related items into logical categories to identify common themes?",
+    "options": {
+      "A": "Affinity Diagram",
+      "B": "Mind Mapping",
+      "C": "Pareto Analysis",
+      "D": "SWOT Analysis"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Affinity Diagrams help organize ideas or issues into categories, uncovering relationships and themes useful during elicitation or analysis.",
+    "why_others_are_wrong": {
+      "B": "Mind Mapping expands on a central idea, not categorize input.",
+      "C": "Pareto ranks issues by frequency or impact, not categorization.",
+      "D": "SWOT identifies factors, not themes."
+    },
+    "babok_reference": "BABOK v3 — Section 10.1 (Affinity Diagram)"
+  },
+  {
+    "question_number": 317,
+    "question": "Which of the following tasks ensures that all business analysis information is accurate, consistent, and available to stakeholders?",
+    "options": {
+      "A": "Plan Business Analysis Information Management",
+      "B": "Define Future State",
+      "C": "Verify Requirements",
+      "D": "Plan Stakeholder Engagement"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "This task defines how BA information will be organized, stored, and accessed, ensuring transparency and reusability across the project lifecycle.",
+    "why_others_are_wrong": {
+      "B": "Defines target outcomes, not documentation strategy.",
+      "C": "Ensures requirement quality, not accessibility.",
+      "D": "Manages relationships, not information assets."
+    },
+    "babok_reference": "BABOK v3 — Section 3.4 (Plan Business Analysis Information Management)"
+  },
+  {
+    "question_number": 321,
+    "question": "Which of the following is used to model transitions between states in the lifecycle of an entity or object?",
+    "options": {
+      "A": "State Modelling",
+      "B": "Activity Diagram",
+      "C": "Process Modelling",
+      "D": "Use Case Diagram"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "State Modelling defines states of an entity and transitions triggered by events, helping identify constraints and behavior patterns.",
+    "why_others_are_wrong": {
+      "B": "Activity Diagrams show actions and decisions, not state changes.",
+      "C": "Process Modelling shows workflow sequences.",
+      "D": "Use Case Diagrams represent actor interactions, not object states."
+    },
+    "babok_reference": "BABOK v3 — Section 10.45 (State Modelling)"
+  },
+  {
+    "question_number": 325,
+    "question": "Which of the following techniques helps ensure that every requirement is linked to a higher-level business need or objective?",
+    "options": {
+      "A": "Trace Requirements",
+      "B": "Define Future State",
+      "C": "Measure Solution Performance",
+      "D": "Elicit Requirements"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Tracing ensures each requirement aligns with stakeholder and business goals, maintaining alignment through changes.",
+    "why_others_are_wrong": {
+      "B": "Defines outcomes but doesn’t manage traceability.",
+      "C": "Measures performance post-implementation, not linkage.",
+      "D": "Elicits requirements but doesn’t maintain relationships."
+    },
+    "babok_reference": "BABOK v3 — Section 5.2 (Trace Requirements)"
+  },
+  {
+    "question_number": 329,
+    "question": "Which BABOK technique helps assess how a proposed change aligns with strategic objectives and existing processes?",
+    "options": {
+      "A": "Impact Analysis",
+      "B": "Benchmarking",
+      "C": "Gap Analysis",
+      "D": "Trend Analysis"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Impact Analysis identifies the consequences of change, dependencies affected, and necessary adjustments to maintain alignment with objectives.",
+    "why_others_are_wrong": {
+      "B": "Benchmarking compares with external standards, not internal change.",
+      "C": "Gap Analysis compares current vs. desired states, not change impact.",
+      "D": "Trend Analysis focuses on time-based performance, not dependencies."
+    },
+    "babok_reference": "BABOK v3 — Section 10.25 (Impact Analysis)"
+  },
+  {
+    "question_number": 333,
+    "question": "Which of the following is a technique used to clarify the relationships between requirements and ensure all dependencies are identified?",
+    "options": {
+      "A": "Requirements Modelling",
+      "B": "Scope Modelling",
+      "C": "Data Dictionary",
+      "D": "Stakeholder Map"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Requirements Modelling uses structured representations (process, data, use case) to analyze relationships and dependencies among requirements.",
+    "why_others_are_wrong": {
+      "B": "Scope Modelling defines boundaries, not internal relationships.",
+      "C": "Data Dictionaries define data attributes, not requirement dependencies.",
+      "D": "Stakeholder Maps represent people, not requirements."
+    },
+    "babok_reference": "BABOK v3 — Section 7.4 (Define Requirements Architecture)"
+  },
+  {
+    "question_number": 336,
+    "question": "Which of the following is used to identify gaps between current and desired capabilities?",
+    "options": {
+      "A": "Gap Analysis",
+      "B": "Benchmarking",
+      "C": "Risk Analysis",
+      "D": "SWOT Analysis"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Gap Analysis compares the current state to the desired future state to identify missing capabilities or improvement areas.",
+    "why_others_are_wrong": {
+      "B": "Benchmarking compares performance externally, not internal gaps.",
+      "C": "Risk Analysis identifies threats, not gaps.",
+      "D": "SWOT analyzes strengths and weaknesses, not specific gaps."
+    },
+    "babok_reference": "BABOK v3 — Section 6.2 (Define Future State)"
+  },
+  {
+    "question_number": 340,
+    "question": "Which of the following measures the degree to which a solution meets stakeholder expectations and business needs?",
+    "options": {
+      "A": "Solution Evaluation",
+      "B": "Requirements Validation",
+      "C": "Stakeholder Analysis",
+      "D": "Gap Analysis"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Solution Evaluation determines how well an implemented solution delivers the expected business value and benefits.",
+    "why_others_are_wrong": {
+      "B": "Validation confirms requirements, not outcomes.",
+      "C": "Stakeholder Analysis identifies participants, not performance.",
+      "D": "Gap Analysis identifies needs, not satisfaction."
+    },
+    "babok_reference": "BABOK v3 — Section 8.1 (Measure Solution Performance)"
+  },
+  {
+    "question_number": 344,
+    "question": "Which of the following is a task performed during Business Analysis Planning and Monitoring?",
+    "options": {
+      "A": "Plan Business Analysis Approach",
+      "B": "Define Solution Scope",
+      "C": "Assess Solution Limitations",
+      "D": "Define Change Strategy"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "This task defines how the business analysis effort will be carried out, including methodologies, tools, and deliverables.",
+    "why_others_are_wrong": {
+      "B": "Solution scope is defined during Strategy Analysis.",
+      "C": "Solution limitations are assessed post-implementation.",
+      "D": "Change strategy is part of Strategy Analysis, not planning."
+    },
+    "babok_reference": "BABOK v3 — Section 3.1 (Plan Business Analysis Approach)"
+  },
+  {
+    "question_number": 348,
+    "question": "Which of the following ensures that elicitation activities are properly prepared, executed, and documented?",
+    "options": {
+      "A": "Conduct Elicitation",
+      "B": "Plan Elicitation and Collaboration",
+      "C": "Validate Requirements",
+      "D": "Define Future State"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "Planning Elicitation defines how information will be gathered, who will participate, and how results will be documented to ensure effective outcomes.",
+    "why_others_are_wrong": {
+      "A": "Conduct Elicitation executes the plan but doesn’t prepare it.",
+      "C": "Validation occurs after elicitation to confirm alignment.",
+      "D": "Define Future State focuses on goals, not elicitation logistics."
+    },
+    "babok_reference": "BABOK v3 — Section 4.1 (Plan Elicitation and Collaboration)"
+  },
+  {
+    "question_number": 351,
+    "question": "Which of the following tasks ensures that stakeholder expectations are understood, aligned, and managed throughout the business analysis effort?",
+    "options": {
+      "A": "Plan Stakeholder Engagement",
+      "B": "Plan Business Analysis Governance",
+      "C": "Define Change Strategy",
+      "D": "Validate Requirements"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "The 'Plan Stakeholder Engagement' task defines the approach for collaboration, communication, and stakeholder involvement to manage expectations throughout the analysis process.",
+    "why_others_are_wrong": {
+      "B": "Governance focuses on approvals and decision-making, not expectation management.",
+      "C": "Change Strategy defines transition approach, not stakeholder engagement.",
+      "D": "Validation ensures requirements meet business needs, not engagement alignment."
+    },
+    "babok_reference": "BABOK v3 — Section 3.2 (Plan Stakeholder Engagement)"
+  },
+  {
+    "question_number": 354,
+    "question": "Which of the following diagrams shows the flow of control or data between system components?",
+    "options": {
+      "A": "Context Diagram",
+      "B": "Data Flow Diagram",
+      "C": "Activity Diagram",
+      "D": "Use Case Diagram"
+    },
+    "correct_answer": "B",
+    "babok_explanation": "A Data Flow Diagram (DFD) models the flow of information through a system, highlighting inputs, processes, data stores, and outputs.",
+    "why_others_are_wrong": {
+      "A": "Context Diagrams show external entities and boundaries, not data flow details.",
+      "C": "Activity Diagrams model process logic, not data movement.",
+      "D": "Use Case Diagrams show actor interactions, not data paths."
+    },
+    "babok_reference": "BABOK v3 — Section 10.14 (Data Flow Diagrams)"
+  },
+  {
+    "question_number": 358,
+    "question": "Which of the following best describes the role of a business analyst during solution evaluation?",
+    "options": {
+      "A": "Assess solution performance and identify improvement opportunities",
+      "B": "Develop the solution and perform technical testing",
+      "C": "Negotiate contracts with vendors",
+      "D": "Approve project budgets"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "During Solution Evaluation, the BA assesses solution performance, identifies limitations, and recommends enhancements to maximize business value.",
+    "why_others_are_wrong": {
+      "B": "Development and testing are technical roles, not BA responsibilities.",
+      "C": "Vendor negotiations fall under procurement, not business analysis.",
+      "D": "Budget approvals are executive responsibilities, not BA tasks."
+    },
+    "babok_reference": "BABOK v3 — Chapter 8 (Solution Evaluation)"
+  },
+  {
+    "question_number": 362,
+    "question": "Which of the following techniques identifies the relationship between two variables to determine how one affects the other?",
+    "options": {
+      "A": "Scatter Diagram",
+      "B": "Run Chart",
+      "C": "Pareto Chart",
+      "D": "Histogram"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "A Scatter Diagram plots data points for two variables to identify correlation, helping analysts detect relationships and potential causation.",
+    "why_others_are_wrong": {
+      "B": "Run Charts show data trends over time, not variable correlation.",
+      "C": "Pareto Charts prioritize categories by frequency, not relationships.",
+      "D": "Histograms show frequency distributions, not variable relationships."
+    },
+    "babok_reference": "BABOK v3 — Section 10.43 (Scatter Diagram)"
+  },
+  {
+    "question_number": 366,
+    "question": "Which of the following helps a business analyst identify all possible outcomes of a decision and evaluate each path?",
+    "options": {
+      "A": "Decision Tree",
+      "B": "State Model",
+      "C": "Use Case Diagram",
+      "D": "Process Flow Diagram"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Decision Trees visually display decision points and possible outcomes, helping assess consequences and probabilities of each alternative.",
+    "why_others_are_wrong": {
+      "B": "State Models represent entity states, not decision outcomes.",
+      "C": "Use Case Diagrams show interactions, not conditional decisions.",
+      "D": "Process Flows depict sequences, not branching decisions."
+    },
+    "babok_reference": "BABOK v3 — Section 10.17 (Decision Modelling)"
+  },
+  {
+    "question_number": 370,
+    "question": "Which of the following is the main objective of defining the future state in business analysis?",
+    "options": {
+      "A": "Establish the vision, goals, and conditions for success",
+      "B": "Identify existing system issues",
+      "C": "Document user stories and acceptance criteria",
+      "D": "Create a transition plan for change implementation"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Defining the Future State articulates desired outcomes, business objectives, and success measures that guide solution design and change efforts.",
+    "why_others_are_wrong": {
+      "B": "Identifying system issues is part of current state assessment.",
+      "C": "User stories are detailed later in requirements definition.",
+      "D": "Transition planning occurs after defining the future state."
+    },
+    "babok_reference": "BABOK v3 — Section 6.2 (Define Future State)"
+  },
+  {
+    "question_number": 373,
+    "question": "Which of the following describes a non-functional requirement?",
+    "options": {
+      "A": "The system must respond to user inputs within two seconds.",
+      "B": "Users must be able to create new records.",
+      "C": "Customers can log in using email or phone number.",
+      "D": "The system must allow password reset functionality."
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Non-functional requirements specify system qualities such as performance, reliability, and usability rather than specific behaviors.",
+    "why_others_are_wrong": {
+      "B": "Describes functionality — a functional requirement.",
+      "C": "Specifies interface capability — functional, not non-functional.",
+      "D": "Defines user function, not performance characteristic."
+    },
+    "babok_reference": "BABOK v3 — Section 2.3 (Requirements Classification Schema)"
+  },
+  {
+    "question_number": 377,
+    "question": "Which BABOK knowledge area includes defining business needs, assessing gaps, and recommending actions to address them?",
+    "options": {
+      "A": "Strategy Analysis",
+      "B": "Solution Evaluation",
+      "C": "Requirements Analysis and Design Definition",
+      "D": "Elicitation and Collaboration"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Strategy Analysis defines the current and future state, assesses gaps, and formulates strategies to achieve business goals.",
+    "why_others_are_wrong": {
+      "B": "Evaluates implemented solutions, not defines strategy.",
+      "C": "Focuses on specifying and modeling requirements, not defining direction.",
+      "D": "Centers on engaging stakeholders, not strategic planning."
+    },
+    "babok_reference": "BABOK v3 — Chapter 6 (Strategy Analysis)"
+  },
+  {
+    "question_number": 381,
+    "question": "Which of the following ensures that requirements align with overall organizational strategy and deliver business value?",
+    "options": {
+      "A": "Validate Requirements",
+      "B": "Verify Requirements",
+      "C": "Plan Business Analysis Approach",
+      "D": "Trace Requirements"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Validate Requirements ensures that requirements support business goals and objectives, confirming they contribute to value realization.",
+    "why_others_are_wrong": {
+      "B": "Verification checks quality, not alignment.",
+      "C": "Planning defines approach, not validation.",
+      "D": "Traceability manages linkage, not validation."
+    },
+    "babok_reference": "BABOK v3 — Section 7.6 (Validate Requirements)"
+  },
+  {
+    "question_number": 385,
+    "question": "Which of the following techniques is used to represent a process at different levels of detail by breaking down activities into sub-processes?",
+    "options": {
+      "A": "Functional Decomposition",
+      "B": "Use Case Modelling",
+      "C": "Process Modelling",
+      "D": "SWOT Analysis"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Functional Decomposition divides processes into sub-processes for easier analysis, clarity, and assignment of ownership.",
+    "why_others_are_wrong": {
+      "B": "Use Case Modelling describes interactions, not decomposition.",
+      "C": "Process Modelling shows sequences, not hierarchical detail.",
+      "D": "SWOT evaluates strategy, not process structure."
+    },
+    "babok_reference": "BABOK v3 — Section 10.23 (Functional Decomposition)"
+  },
+  {
+    "question_number": 389,
+    "question": "Which BABOK technique is best suited to prioritize requirements based on their importance to stakeholders and business value?",
+    "options": {
+      "A": "MoSCoW Analysis",
+      "B": "Root Cause Analysis",
+      "C": "Benchmarking",
+      "D": "Decision Tree Analysis"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "MoSCoW Analysis categorizes requirements as Must, Should, Could, or Won’t have to guide prioritization decisions collaboratively.",
+    "why_others_are_wrong": {
+      "B": "Root Cause Analysis identifies causes, not priority.",
+      "C": "Benchmarking compares industry performance, not requirement value.",
+      "D": "Decision Trees evaluate choices, not requirement priorities."
+    },
+    "babok_reference": "BABOK v3 — Section 10.35 (Prioritization)"
+  },
+  {
+    "question_number": 393,
+    "question": "Which of the following defines the boundaries of a system or solution, identifying what is in and out of scope?",
+    "options": {
+      "A": "Scope Modelling",
+      "B": "Process Modelling",
+      "C": "Data Modelling",
+      "D": "Use Case Modelling"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Scope Modelling identifies solution boundaries, interfaces, and context, clarifying what elements are included or excluded in the change.",
+    "why_others_are_wrong": {
+      "B": "Describes process flow, not boundaries.",
+      "C": "Defines data structures, not inclusion/exclusion criteria.",
+      "D": "Shows interactions, not scope."
+    },
+    "babok_reference": "BABOK v3 — Section 10.38 (Scope Modelling)"
+  },
+  {
+    "question_number": 397,
+    "question": "Which of the following is a characteristic of a good requirement according to BABOK?",
+    "options": {
+      "A": "Consistent, Unambiguous, and Testable",
+      "B": "Complex, Abstract, and Detailed",
+      "C": "General, Flexible, and Conceptual",
+      "D": "High-level, Broad, and Interpretive"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Good requirements are clear, consistent, unambiguous, and testable to ensure understanding and verifiability across stakeholders.",
+    "why_others_are_wrong": {
+      "B": "Complex and abstract requirements reduce clarity.",
+      "C": "Generalized requirements lack specificity and testability.",
+      "D": "Broad or interpretive statements lead to ambiguity."
+    },
+    "babok_reference": "BABOK v3 — Section 7.5 (Verify Requirements)"
+  },
+  {
+    "question_number": 400,
+    "question": "Which of the following is an example of a transition requirement?",
+    "options": {
+      "A": "Data migration from legacy to new system",
+      "B": "System must support multi-user login",
+      "C": "Application must load within three seconds",
+      "D": "User can update profile details"
+    },
+    "correct_answer": "A",
+    "babok_explanation": "Transition requirements define capabilities needed only during transition, such as data migration, training, or conversion activities.",
+    "why_others_are_wrong": {
+      "B": "Functional requirement — describes what system does.",
+      "C": "Non-functional — describes performance criteria.",
+      "D": "Functional — defines user capability."
+    },
+    "babok_reference": "BABOK v3 — Section 2.3 (Requirements Classification Schema)"
+  }
+]
+
+

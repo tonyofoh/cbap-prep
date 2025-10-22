@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+    
+    /* Card colors */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    
+    /* Popover colors */
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    
+    /* Primary colors - Deep Blue */
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+    
+    /* Secondary colors - Emerald */
+    --secondary: 160 84% 39%;
+    --secondary-foreground: 210 40% 98%;
+    
+    /* Accent colors - Purple */
+    --accent: 262 83% 58%;
+    --accent-foreground: 210 40% 98%;
+    
+    /* Muted colors */
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    
+    /* Destructive colors */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    
+    /* Border and UI colors */
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221 83% 53%;
+    
+    /* Radius */
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Base colors */
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    
+    /* Card colors */
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    
+    /* Popover colors */
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    
+    /* Primary colors - Bright Blue */
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
+    
+    /* Secondary colors - Bright Emerald */
+    --secondary: 159 84% 44%;
+    --secondary-foreground: 222 47% 11%;
+    
+    /* Accent colors - Bright Purple */
+    --accent: 263 90% 51%;
+    --accent-foreground: 222 47% 11%;
+    
+    /* Muted colors */
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+    
+    /* Destructive colors */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    
+    /* Border and UI colors */
+    --border: 217 19% 27%;
+    --input: 217 19% 27%;
+    --ring: 224 76% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Custom styles */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary;
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-xl hover:scale-[1.02] hover:border-primary/30;
+  animation: float 6s ease-in-out infinite;
+}
+
+.card-hover button {
+  position: relative;
+  z-index: 10;
+}
+
+.glass-effect {
+  @apply backdrop-blur-sm bg-background/80;
+}
+
+/* Button animations */
+.button-glow {
+  @apply relative overflow-hidden;
+}
+
+.button-glow::after {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent;
+  transform: translateX(-100%);
+  animation: button-shine 3s infinite;
+}
+
+@keyframes button-shine {
+  100% {
+    transform: translateX(100%);
+  }
+}

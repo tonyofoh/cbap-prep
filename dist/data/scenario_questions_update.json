@@ -1,0 +1,955 @@
+[
+  {
+    "scenario_id": "S1",
+    "title": "Global Online Platform — Multi-Currency Payments, Refunds & Compliance",
+    "scenario": "A global e-commerce platform is rolling out a multi-currency payment gateway across North America, EMEA, and APAC. The initiative must support real-time FX rate updates, region-specific refund SLAs, and varying compliance rules (AML/KYC, PCI-DSS). Operations, Marketing, Compliance, Finance, and Regional Managers often interpret refund and notification rules differently, leading to inconsistent customer experiences and rework. The BA has to achieve alignment on terminology, policies, and service levels; model order/return workflows; manage trade-offs for performance targets (for example, refund turnaround time); and ensure traceability from business goals to implemented capabilities. Several country sites integrate with legacy tax and invoicing systems, and delivery partners expose different interface contracts. The program is delivered iteratively with design prototypes and frequent stakeholder reviews.",
+    "questions": [
+      {
+        "question_number": 1,
+        "question": "To ensure all key viewpoints are engaged before detailing requirements, what should the BA do first?",
+        "options": {
+          "A": "Conduct stakeholder analysis",
+          "B": "Document functional requirements",
+          "C": "Develop user stories",
+          "D": "Facilitate UAT"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Identifying, analyzing, and planning engagement for stakeholders is foundational to effective elicitation and governance.",
+        "why_others_are_wrong": {
+          "B": "Premature without knowing who to involve.",
+          "C": "Too detailed before stakeholder landscape is clear.",
+          "D": "UAT is a late-lifecycle activity."
+        },
+        "babok_reference": "BABOK v3 — 3.2 Plan Stakeholder Engagement"
+      },
+      {
+        "question_number": 2,
+        "question": "Ops and Finance disagree on how frequently FX rates should refresh due to potential order disruption. What is the BA’s next best step?",
+        "options": {
+          "A": "Perform impact analysis on rate-update frequency",
+          "B": "Update requirements immediately",
+          "C": "Escalate to project governance",
+          "D": "Defer until testing"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Impact Analysis evaluates dependencies, risks, and downstream effects to inform decisions.",
+        "why_others_are_wrong": {
+          "B": "May embed conflicts and trigger rework.",
+          "C": "Escalate with evidence after analysis.",
+          "D": "Deferral weakens collaboration and clarity."
+        },
+        "babok_reference": "BABOK v3 — 10.25 Impact Analysis"
+      },
+      {
+        "question_number": 3,
+        "question": "The BA must illustrate region-specific order, return, and refund steps with decision points. Which technique is most appropriate?",
+        "options": {
+          "A": "Process Modelling",
+          "B": "Data Modelling",
+          "C": "Use Case Diagram",
+          "D": "State Modelling"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Process models show activities, flows, and decisions across regions, ideal for operational alignment.",
+        "why_others_are_wrong": {
+          "B": "Focuses on data structure.",
+          "C": "Shows actor interactions, not flow detail.",
+          "D": "Shows lifecycle states of an entity."
+        },
+        "babok_reference": "BABOK v3 — 10.31 Process Modelling"
+      },
+      {
+        "question_number": 4,
+        "question": "Terms such as refund, reversal, and chargeback are used inconsistently. What should the BA produce?",
+        "options": {
+          "A": "Glossary and Concept Model",
+          "B": "Process Flow Diagram",
+          "C": "Stakeholder Register",
+          "D": "Business Case"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Concept Modelling with a shared glossary standardizes domain vocabulary and relationships.",
+        "why_others_are_wrong": {
+          "B": "Explains steps, not meaning.",
+          "C": "Lists people, not terminology.",
+          "D": "Justifies value, not language."
+        },
+        "babok_reference": "BABOK v3 — 10.9 Concept Modelling"
+      },
+      {
+        "question_number": 5,
+        "question": "Leaders demand a 24-hour global refund SLA. What type of requirement is this?",
+        "options": {
+          "A": "Non-functional requirement",
+          "B": "Functional requirement",
+          "C": "Transition requirement",
+          "D": "Stakeholder requirement"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Time-based service levels are quality/performance attributes.",
+        "why_others_are_wrong": {
+          "B": "Functional describes system behavior, not quality.",
+          "C": "Transition is temporary migration need.",
+          "D": "Stakeholder expresses a need, not the quality class."
+        },
+        "babok_reference": "BABOK v3 — 2.3 Requirements Classification Schema"
+      },
+      {
+        "question_number": 6,
+        "question": "To ensure each capability supports business objectives, which artifact should the BA maintain?",
+        "options": {
+          "A": "Requirements Traceability Matrix (RTM)",
+          "B": "Use Case Diagram",
+          "C": "Project Scope Statement",
+          "D": "RACI Matrix"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "RTM links needs to requirements, design, and tests to safeguard alignment.",
+        "why_others_are_wrong": {
+          "B": "Covers actor interactions only.",
+          "C": "Defines boundaries, not linkages.",
+          "D": "Covers roles/decisions, not requirement lineage."
+        },
+        "babok_reference": "BABOK v3 — 5.2 Trace Requirements"
+      },
+      {
+        "question_number": 7,
+        "question": "The BA organizes UI demos to validate refund flows before build. Which technique is being applied?",
+        "options": {
+          "A": "Prototyping",
+          "B": "Brainstorming",
+          "C": "Interface Analysis",
+          "D": "Data Flow Diagram"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Prototyping validates understanding and reduces ambiguity pre-development.",
+        "why_others_are_wrong": {
+          "B": "Idea generation, not validation.",
+          "C": "Focus on integration points, not UI validation.",
+          "D": "Shows data movement, not UI."
+        },
+        "babok_reference": "BABOK v3 — 10.37 Prototyping"
+      },
+      {
+        "question_number": 8,
+        "question": "Compliance and Marketing conflict on the content/timing of refund notifications. What should the BA do?",
+        "options": {
+          "A": "Facilitate a conflict-resolution workshop",
+          "B": "Prioritize compliance unilaterally",
+          "C": "Defer decision to escalation",
+          "D": "Document both and proceed"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Facilitation enables structured resolution and consensus on constraints and customer needs.",
+        "why_others_are_wrong": {
+          "B": "Undermines collaboration and buy-in.",
+          "C": "Escalate with evidence, after facilitation.",
+          "D": "Proceeding without agreement invites rework."
+        },
+        "babok_reference": "BABOK v3 — 10.19 Facilitation"
+      },
+      {
+        "question_number": 9,
+        "question": "Refund delays spike in APAC. The BA needs to find underlying causes. Which tool is best?",
+        "options": {
+          "A": "Fishbone (Ishikawa) Diagram",
+          "B": "SWOT",
+          "C": "Benchmarking",
+          "D": "Flowchart"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Root cause analysis structures causal factors to isolate drivers of delay.",
+        "why_others_are_wrong": {
+          "B": "Strategic scan, not problem analysis.",
+          "C": "External comparisons, not causes.",
+          "D": "Depicts steps, not causal chains."
+        },
+        "babok_reference": "BABOK v3 — 10.41 Root Cause Analysis"
+      },
+      {
+        "question_number": 10,
+        "question": "The BA must confirm the new refund process achieves customer satisfaction goals post-launch. Which task applies?",
+        "options": {
+          "A": "Measure Solution Performance",
+          "B": "Validate Requirements",
+          "C": "Verify Requirements",
+          "D": "Define Future State"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Measures actual performance against business value objectives and KPIs.",
+        "why_others_are_wrong": {
+          "B": "Validation is pre-implementation.",
+          "C": "Verification checks requirement quality.",
+          "D": "Future state sets targets, not measures."
+        },
+        "babok_reference": "BABOK v3 — 8.1 Measure Solution Performance"
+      }
+    ]
+  },
+  {
+    "scenario_id": "S2",
+    "title": "Offender Management System — Justice Data Sharing & Access Control",
+    "scenario": "A justice department is implementing an integrated offender management system to connect prisons, courts, and police. The solution must unify offender intake, parole tracking, and case data. Strict legal and privacy constraints apply, with role-based access for officers, court clerks, and administrators. Regional sites run slightly different processes and duplicate data entry. External interfaces with court and police databases vary in format and timeliness. Stakeholders include compliance, security, parole officers, court staff, IT, and the program sponsor. The BA must reconcile policy conflicts, align processes across regions, define interface contracts, and ensure that confidentiality and auditability requirements are fully traceable into design, testing, and operations.",
+    "questions": [
+      {
+        "question_number": 11,
+        "question": "Security officers cite privacy rules that conflict with data-sharing policies. What should the BA do first?",
+        "options": {
+          "A": "Facilitate a workshop to reconcile policies",
+          "B": "Amend the data model immediately",
+          "C": "Exclude the requirements temporarily",
+          "D": "Ask the sponsor to decide"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Facilitated collaboration helps resolve conflicts and align requirements before design updates.",
+        "why_others_are_wrong": {
+          "B": "Premature without consensus.",
+          "C": "Loses traceability and context.",
+          "D": "Escalation before analysis reduces buy-in."
+        },
+        "babok_reference": "BABOK v3 — 10.19 Facilitation"
+      },
+      {
+        "question_number": 12,
+        "question": "Intake workflow inputs from parole officers are incomplete. What should the BA do?",
+        "options": {
+          "A": "Conduct targeted interviews with parole officers",
+          "B": "Infer details from legacy documents",
+          "C": "Ask developers to estimate without data",
+          "D": "Delay elicitation"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Interviews fill gaps with firsthand operational knowledge to improve completeness.",
+        "why_others_are_wrong": {
+          "B": "Documents may be outdated.",
+          "C": "Assumptions jeopardize validity.",
+          "D": "Delays progress without adding value."
+        },
+        "babok_reference": "BABOK v3 — 4.2 Conduct Elicitation"
+      },
+      {
+        "question_number": 13,
+        "question": "Regional offender intake has redundant steps. Which technique best exposes improvement opportunities?",
+        "options": {
+          "A": "Process Modelling",
+          "B": "Benchmarking",
+          "C": "Fishbone Diagram",
+          "D": "SWOT Analysis"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Process models reveal redundancy and waste across regions for harmonization.",
+        "why_others_are_wrong": {
+          "B": "External comparison, not internal flow.",
+          "C": "Finds causes, not redesign options.",
+          "D": "Strategic scan, not process detail."
+        },
+        "babok_reference": "BABOK v3 — 10.31 Process Modelling"
+      },
+      {
+        "question_number": 14,
+        "question": "Ensuring only authorized staff can access parole data reflects which requirement type?",
+        "options": {
+          "A": "Non-functional requirement",
+          "B": "Functional requirement",
+          "C": "Transition requirement",
+          "D": "Stakeholder requirement"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Security and confidentiality are quality attributes, not behaviors.",
+        "why_others_are_wrong": {
+          "B": "Describes actions, not qualities.",
+          "C": "Temporary migration needs only.",
+          "D": "Expresses needs, not classification."
+        },
+        "babok_reference": "BABOK v3 — 2.3 Requirements Classification Schema"
+      },
+      {
+        "question_number": 15,
+        "question": "The BA must document external system boundaries and data exchanges with courts and police. Which technique fits best?",
+        "options": {
+          "A": "Context Modelling",
+          "B": "Entity-Relationship Diagram",
+          "C": "Use Case Diagram",
+          "D": "Stakeholder Map"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Context models depict interfaces and boundaries for integration clarity.",
+        "why_others_are_wrong": {
+          "B": "Defines data structure only.",
+          "C": "Focus on actor interactions, not system perimeter.",
+          "D": "Shows people/roles, not systems."
+        },
+        "babok_reference": "BABOK v3 — 10.8 Context Modelling"
+      },
+      {
+        "question_number": 38,
+        "question": "Duplicate offender records occur across sites. What is the most effective recommendation?",
+        "options": {
+          "A": "Implement centralized validation rules",
+          "B": "Add manual approvals",
+          "C": "Increase data entry training",
+          "D": "Use spreadsheets for pre-checks"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Centralized rules prevent duplication at source and enforce consistency.",
+        "why_others_are_wrong": {
+          "B": "Approvals don’t prevent duplicates.",
+          "C": "Training helps but doesn’t fix process flaws.",
+          "D": "Spreadsheets add risk and fragmentation."
+        },
+        "babok_reference": "BABOK v3 — 10.7 Business Rules Analysis"
+      },
+      {
+        "question_number": 45,
+        "question": "How can the BA ensure each legal rule is implemented and tested appropriately?",
+        "options": {
+          "A": "Maintain a Requirements Traceability Matrix",
+          "B": "Produce a Data Model",
+          "C": "Draft an Architecture Diagram",
+          "D": "Update the Stakeholder Register"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Traceability links rules to design and test cases for completeness and auditability.",
+        "why_others_are_wrong": {
+          "B": "Captures entities, not rule mappings.",
+          "C": "Shows components, not requirement lineage.",
+          "D": "Lists people, not rules."
+        },
+        "babok_reference": "BABOK v3 — 5.2 Trace Requirements"
+      },
+      {
+        "question_number": 24,
+        "question": "Court users report processing delays linked to manual approvals. Which analysis should the BA apply?",
+        "options": {
+          "A": "Root Cause Analysis",
+          "B": "SWOT",
+          "C": "Benchmarking",
+          "D": "Business Rules Analysis"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Root cause isolates delay drivers and informs targeted improvements.",
+        "why_others_are_wrong": {
+          "B": "Strategic overview, not operational diagnosis.",
+          "C": "External comparison, not issue analysis.",
+          "D": "Defines rules, doesn’t find causes."
+        },
+        "babok_reference": "BABOK v3 — 10.41 Root Cause Analysis"
+      },
+      {
+        "question_number": 29,
+        "question": "Temporary procedures are needed during phased rollout. What requirement type is that?",
+        "options": {
+          "A": "Transition requirement",
+          "B": "Functional requirement",
+          "C": "Stakeholder requirement",
+          "D": "Non-functional requirement"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Transition requirements are temporary enablers for moving from current to future state.",
+        "why_others_are_wrong": {
+          "B": "Permanent behaviors only.",
+          "C": "Captures needs, not classification.",
+          "D": "Quality attributes, not temporary process."
+        },
+        "babok_reference": "BABOK v3 — 2.3 Requirements Classification Schema"
+      },
+      {
+        "question_number": 40,
+        "question": "Post-rollout role changes cause confusion. Which task helps determine if the organization supports the solution?",
+        "options": {
+          "A": "Assess Enterprise Limitations",
+          "B": "Plan Stakeholder Engagement",
+          "C": "Verify Requirements",
+          "D": "Define Future State"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Evaluates organizational structures, culture, and readiness limiting value realization.",
+        "why_others_are_wrong": {
+          "B": "Engagement plan is an earlier planning task.",
+          "C": "Verification focuses on requirement quality.",
+          "D": "Future state sets objectives, not assesses adoption."
+        },
+        "babok_reference": "BABOK v3 — 8.3 Assess Enterprise Limitations"
+      }
+    ]
+  },
+  {
+    "scenario_id": "S3",
+    "title": "Health & Fitness App — Clinical Safety, Privacy & Usability",
+    "scenario": "A startup’s mobile app supports patient medication tracking, appointment scheduling, and basic vitals from wearables. It must comply with GDPR (and HIPAA-like constraints where applicable). Doctors, patients, and support staff use the app differently, and clinical terminology is often inconsistent across providers. Early usability tests show confusion about dosage reminders and navigation. The product roadmap includes wearable integration, configurable themes, and analytics for engagement. The BA must balance clinical safety and privacy with usability, ensure business rules for prescriptions and renewals are clear, and define measurable post-launch KPIs for adoption and effectiveness.",
+    "questions": [
+      {
+        "question_number": 16,
+        "question": "Clinicians use inconsistent dosage terms, confusing patients. What should the BA produce?",
+        "options": {
+          "A": "Glossary and Concept Model",
+          "B": "Root Cause Analysis",
+          "C": "Process Modelling",
+          "D": "SWOT"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Common vocabulary and relationships reduce ambiguity across stakeholder groups.",
+        "why_others_are_wrong": {
+          "B": "Targets causes rather than terminology standardization.",
+          "C": "Shows flow, not semantic clarity.",
+          "D": "Strategic review, not domain definition."
+        },
+        "babok_reference": "BABOK v3 — 10.9 Concept Modelling"
+      },
+      {
+        "question_number": 17,
+        "question": "Before designing storage and access controls, what should the BA do first?",
+        "options": {
+          "A": "Identify applicable regulations and constraints",
+          "B": "Prototype encryption",
+          "C": "Interview patients about privacy first",
+          "D": "Start test planning"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Legal/regulatory constraints must frame solution options and quality attributes.",
+        "why_others_are_wrong": {
+          "B": "Design follows requirements.",
+          "C": "User expectations complement, not precede, legal constraints.",
+          "D": "Testing is downstream of definition."
+        },
+        "babok_reference": "BABOK v3 — 6.1 Analyze Current State"
+      },
+      {
+        "question_number": 18,
+        "question": "Users request color themes during a prototype session. What should the BA do?",
+        "options": {
+          "A": "Capture feedback and assess feasibility with UX/dev",
+          "B": "Implement immediately",
+          "C": "Reject as out of scope",
+          "D": "Escalate to sponsor"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Elicitation outcomes must be captured and evaluated for feasibility and priority.",
+        "why_others_are_wrong": {
+          "B": "Change without analysis risks misalignment.",
+          "C": "Premature rejection harms engagement.",
+          "D": "Escalation is unnecessary for design input."
+        },
+        "babok_reference": "BABOK v3 — 4.4 Communicate BA Information"
+      },
+      {
+        "question_number": 19,
+        "question": "Dev team needs clarity on renewal validation steps. Which technique applies?",
+        "options": {
+          "A": "Business Rules Analysis",
+          "B": "Process Modelling",
+          "C": "User Stories",
+          "D": "Benchmarking"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Rules define policy constraints and decision logic governing clinical actions.",
+        "why_others_are_wrong": {
+          "B": "Shows flow, not decision logic.",
+          "C": "Captures behavior but not rules detail.",
+          "D": "External comparison, not prescription logic."
+        },
+        "babok_reference": "BABOK v3 — 10.7 Business Rules Analysis"
+      },
+      {
+        "question_number": 20,
+        "question": "Post-launch, patients report confusion with dosage reminders. Which task should the BA perform?",
+        "options": {
+          "A": "Measure Solution Performance",
+          "B": "Validate Requirements",
+          "C": "Verify Requirements",
+          "D": "Define Future State"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Evaluate real-world usability and outcome KPIs to identify improvements.",
+        "why_others_are_wrong": {
+          "B": "Validation is pre-release alignment.",
+          "C": "Verification checks quality of specification.",
+          "D": "Future state sets vision, not measurement."
+        },
+        "babok_reference": "BABOK v3 — 8.1 Measure Solution Performance"
+      },
+      {
+        "question_number": 33,
+        "question": "Patients find the symptom tracker confusing during testing. What should the BA recommend?",
+        "options": {
+          "A": "Conduct usability testing and analyze findings",
+          "B": "Add tooltips everywhere",
+          "C": "Escalate to product owner",
+          "D": "Freeze design until phase two"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Usability evaluation provides evidence-based improvements to interaction design.",
+        "why_others_are_wrong": {
+          "B": "May not address core design issues.",
+          "C": "Escalation adds no user insight.",
+          "D": "Halts learning in an iterative context."
+        },
+        "babok_reference": "BABOK v3 — 10.45 Usability Evaluation"
+      },
+      {
+        "question_number": 34,
+        "question": "Ensuring GDPR compliance for patient data is primarily which requirement type?",
+        "options": {
+          "A": "Non-functional requirement",
+          "B": "Functional requirement",
+          "C": "Transition requirement",
+          "D": "Stakeholder requirement"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Compliance and security are system qualities (constraints).",
+        "why_others_are_wrong": {
+          "B": "Behavioral features, not constraints.",
+          "C": "Temporary change needs only.",
+          "D": "Expresses need but not classification."
+        },
+        "babok_reference": "BABOK v3 — 2.3 Requirements Classification Schema"
+      },
+      {
+        "question_number": 41,
+        "question": "The BA must assess patient satisfaction after release. Which technique is best?",
+        "options": {
+          "A": "Surveys/Questionnaires",
+          "B": "Brainstorming",
+          "C": "Interface Analysis",
+          "D": "Process Modelling"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Surveys provide quantifiable data for post-launch evaluation.",
+        "why_others_are_wrong": {
+          "B": "Idea generation, not measurement.",
+          "C": "Defines interactions, not perception.",
+          "D": "Maps flow, not satisfaction."
+        },
+        "babok_reference": "BABOK v3 — 10.47 Surveys/Questionnaires"
+      },
+      {
+        "question_number": 46,
+        "question": "Users request wearable integration after launch. What should the BA assess first?",
+        "options": {
+          "A": "Feasibility and business value",
+          "B": "Test strategy updates",
+          "C": "Training materials",
+          "D": "Marketing campaign"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Assess risks, costs, benefits, and feasibility before change approval.",
+        "why_others_are_wrong": {
+          "B": "Testing is downstream of feasibility.",
+          "C": "Training follows feature approval and build.",
+          "D": "Marketing is independent of feasibility."
+        },
+        "babok_reference": "BABOK v3 — 7.1 Assess Risks; 5.4 Assess Requirements Changes"
+      },
+      {
+        "question_number": 49,
+        "question": "To track engagement post-release, what is most appropriate?",
+        "options": {
+          "A": "Define KPIs and Metrics",
+          "B": "Fishbone Diagram",
+          "C": "Use Case Modelling",
+          "D": "Process Modelling"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Metrics/KPIs enable objective measurement of adoption and outcomes.",
+        "why_others_are_wrong": {
+          "B": "Finds causes, not measures results.",
+          "C": "Interaction scope, not metrics.",
+          "D": "Flow description, not measurement."
+        },
+        "babok_reference": "BABOK v3 — 10.30 Metrics and KPIs"
+      }
+    ]
+  },
+  {
+    "scenario_id": "S4",
+    "title": "Retail Business Transformation — ERP Integration & Automation",
+    "scenario": "A national retailer is automating stock replenishment and integrating e-commerce, POS, and warehouse systems with an ERP. The program aims to reduce manual approval bottlenecks, improve order accuracy, and enable real-time dashboards for fulfillment performance. Warehouse and Sales disagree on restocking priorities; returns have increased post-launch due to duplicate stock entries from bad data mapping. The BA must align priorities across functions, model and optimize replenishment flows, specify interfaces with ERP and logistics partners, and define measurable KPIs for accuracy and cycle time. Executive stakeholders need credible evidence that automation improved efficiency.",
+    "questions": [
+      {
+        "question_number": 21,
+        "question": "Which technique best reveals where automation can reduce manual error in replenishment?",
+        "options": {
+          "A": "Process Modelling",
+          "B": "Stakeholder Mapping",
+          "C": "Root Cause Analysis",
+          "D": "State Modelling"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Process models highlight waste and hand-offs suited for automation.",
+        "why_others_are_wrong": {
+          "B": "Shows roles/relationships, not flow inefficiencies.",
+          "C": "Explains causes after a problem appears.",
+          "D": "Tracks entity states, not replenishment steps."
+        },
+        "babok_reference": "BABOK v3 — 10.31 Process Modelling"
+      },
+      {
+        "question_number": 22,
+        "question": "Warehouse and Sales dispute prioritization of restocking. Best BA action?",
+        "options": {
+          "A": "Facilitate a prioritization session",
+          "B": "Favor warehouse as logistics owners",
+          "C": "Escalate to steering committee",
+          "D": "Defer decision"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Collaborative prioritization clarifies value, dependencies, and trade-offs.",
+        "why_others_are_wrong": {
+          "B": "Unilateral choice harms buy-in.",
+          "C": "Escalation is premature without facilitation.",
+          "D": "Deferral slows delivery."
+        },
+        "babok_reference": "BABOK v3 — 10.35 Prioritization"
+      },
+      {
+        "question_number": 23,
+        "question": "To ensure stock alerts integrate cleanly with the ERP, which technique should the BA use?",
+        "options": {
+          "A": "Interface Analysis",
+          "B": "Gap Analysis",
+          "C": "Root Cause Analysis",
+          "D": "Fishbone"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Interface Analysis defines data contracts, formats, and interaction rules.",
+        "why_others_are_wrong": {
+          "B": "Identifies capability gaps, not interface details.",
+          "C": "Problem diagnosis, not interface definition.",
+          "D": "Cause exploration, not connectivity."
+        },
+        "babok_reference": "BABOK v3 — 10.26 Interface Analysis"
+      },
+      {
+        "question_number": 24,
+        "question": "Customers report order delays linked to manual approvals. Which analysis is appropriate?",
+        "options": {
+          "A": "Root Cause Analysis",
+          "B": "SWOT",
+          "C": "Benchmarking",
+          "D": "Business Rules Analysis"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Identifies bottleneck causes and informs process redesign.",
+        "why_others_are_wrong": {
+          "B": "Strategic context, not operational diagnosis.",
+          "C": "External comparison, not cause analysis.",
+          "D": "Defines rules, doesn’t find causes."
+        },
+        "babok_reference": "BABOK v3 — 10.41 Root Cause Analysis"
+      },
+      {
+        "question_number": 25,
+        "question": "Post-launch, duplicate stock entries increase returns. First BA step?",
+        "options": {
+          "A": "Measure solution performance vs. expected outcomes",
+          "B": "Escalate to IT",
+          "C": "Raise a patch request",
+          "D": "Retrain users"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Evaluate performance to pinpoint where the solution deviates from goals.",
+        "why_others_are_wrong": {
+          "B": "Escalation without evidence lacks direction.",
+          "C": "Fixes without analysis may miss root causes.",
+          "D": "Training may not resolve mapping defects."
+        },
+        "babok_reference": "BABOK v3 — 8.1 Measure Solution Performance"
+      },
+      {
+        "question_number": 35,
+        "question": "Sales and warehouse data are inconsistent. What should be analyzed first?",
+        "options": {
+          "A": "Data mapping and transformation rules",
+          "B": "System performance logs",
+          "C": "Network latency",
+          "D": "User permissions"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Mapping/migrations are the common root of cross-system inconsistencies.",
+        "why_others_are_wrong": {
+          "B": "Doesn’t explain semantic mismatches.",
+          "C": "Connectivity rarely causes wrong values.",
+          "D": "Access control is orthogonal to data mapping."
+        },
+        "babok_reference": "BABOK v3 — 10.13 Data Modelling"
+      },
+      {
+        "question_number": 36,
+        "question": "Execs ask for measurable KPIs for order accuracy and cycle time. Which task supports this?",
+        "options": {
+          "A": "Define Future State",
+          "B": "Plan BA Approach",
+          "C": "Assess Solution Performance",
+          "D": "Benchmarking"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Future state definition includes success measures to guide design.",
+        "why_others_are_wrong": {
+          "B": "Approach planning doesn’t define goals.",
+          "C": "Used after implementation.",
+          "D": "External comparison, not internal goals."
+        },
+        "babok_reference": "BABOK v3 — 6.2 Define Future State"
+      },
+      {
+        "question_number": 37,
+        "question": "For a real-time tracking dashboard request, what is the BA’s first step?",
+        "options": {
+          "A": "Elicit reporting and visualization needs",
+          "B": "Build wireframes immediately",
+          "C": "Start implementation",
+          "D": "Create the data dictionary"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Clarifying stakeholder information needs precedes design artifacts.",
+        "why_others_are_wrong": {
+          "B": "Wireframes follow requirements.",
+          "C": "Build follows analysis.",
+          "D": "Dictionary is derived from needs."
+        },
+        "babok_reference": "BABOK v3 — 4.2 Conduct Elicitation"
+      },
+      {
+        "question_number": 47,
+        "question": "Executives want proof automation increased efficiency. Which task applies?",
+        "options": {
+          "A": "Measure Solution Performance",
+          "B": "Validate Requirements",
+          "C": "Benchmarking",
+          "D": "Verify Requirements"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Measures value realization vs. defined objectives.",
+        "why_others_are_wrong": {
+          "B": "Alignment check before build.",
+          "C": "External comparison only.",
+          "D": "Quality of requirements, not outcomes."
+        },
+        "babok_reference": "BABOK v3 — 8.1 Measure Solution Performance"
+      },
+      {
+        "question_number": 50,
+        "question": "Automation reduced errors but slowed onboarding. Which task helps identify the constraint?",
+        "options": {
+          "A": "Assess Solution Limitations",
+          "B": "Define Future State",
+          "C": "Plan Stakeholder Engagement",
+          "D": "Elicit Requirements"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Analyzes internal solution constraints that impede value realization.",
+        "why_others_are_wrong": {
+          "B": "Vision setting, not constraint analysis.",
+          "C": "Engagement planning is unrelated.",
+          "D": "Elicitation precedes implementation."
+        },
+        "babok_reference": "BABOK v3 — 8.2 Assess Solution Limitations"
+      }
+    ]
+  },
+  {
+    "scenario_id": "S5",
+    "title": "Bank Technology Modernization — Legacy to Cloud, Migration & Change",
+    "scenario": "A bank is migrating core services from a legacy platform to a cloud-based architecture. Multiple departments have divergent workflows (for example, loan approvals), and critical dependencies exist across CRM, payments, and reporting. The migration requires interim procedures, data mapping, and staged cutovers. Some stakeholders are intermittently unavailable, and requirements evolve as teams learn about constraints. After deployment, staff struggle with the new interface, and value realization is uneven across departments. The BA must decompose functions to identify dependencies, plan for transition requirements, maintain traceability, and iteratively analyze and remediate limitations that block adoption and performance.",
+    "questions": [
+      {
+        "question_number": 26,
+        "question": "Which technique best reveals migration dependencies across complex services?",
+        "options": {
+          "A": "Functional Decomposition",
+          "B": "Process Modelling",
+          "C": "Data Modelling",
+          "D": "Transition Requirements Analysis"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Decomposes functions into components and reveals dependency structure.",
+        "why_others_are_wrong": {
+          "B": "Shows flow, not hierarchical dependency.",
+          "C": "Defines structure, not migration dependencies.",
+          "D": "Transition is defined after dependencies are known."
+        },
+        "babok_reference": "BABOK v3 — 10.23 Functional Decomposition"
+      },
+      {
+        "question_number": 27,
+        "question": "Redundant approvals are uncovered in legacy processes. Best recommendation?",
+        "options": {
+          "A": "Redesign and streamline approvals",
+          "B": "Automate existing approvals as-is",
+          "C": "Ignore and focus on technology first",
+          "D": "Defer redesign to post-migration"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Optimize processes before or during migration to avoid automating waste.",
+        "why_others_are_wrong": {
+          "B": "Automates inefficiency.",
+          "C": "Neglects business value.",
+          "D": "Creates costly rework."
+        },
+        "babok_reference": "BABOK v3 — 6.2 Define Future State"
+      },
+      {
+        "question_number": 28,
+        "question": "Data migration fails for older transactions. What should the BA examine first?",
+        "options": {
+          "A": "Source data quality and mapping rules",
+          "B": "Developers’ code",
+          "C": "UI configuration",
+          "D": "Uptime logs"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Mapping and data quality are primary sources of migration defects.",
+        "why_others_are_wrong": {
+          "B": "Premature focus; BA first validates mapping/rules.",
+          "C": "UI unrelated to migration logic.",
+          "D": "Availability doesn’t explain conversion errors."
+        },
+        "babok_reference": "BABOK v3 — 10.13 Data Modelling"
+      },
+      {
+        "question_number": 29,
+        "question": "Interim procedures are required during staged cutover. What requirement type is this?",
+        "options": {
+          "A": "Transition requirement",
+          "B": "Functional requirement",
+          "C": "Stakeholder requirement",
+          "D": "Non-functional requirement"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Temporary capabilities to move from current to future state.",
+        "why_others_are_wrong": {
+          "B": "Permanent behavior, not temporary.",
+          "C": "Expression of need, not classification.",
+          "D": "Quality attribute, not interim process."
+        },
+        "babok_reference": "BABOK v3 — 2.3 Requirements Classification Schema"
+      },
+      {
+        "question_number": 30,
+        "question": "Staff struggle with the new interface post-deployment. Which task applies first?",
+        "options": {
+          "A": "Assess Solution Limitations",
+          "B": "Validate Requirements",
+          "C": "Plan Stakeholder Engagement",
+          "D": "Define Future State"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Identify internal solution issues preventing value realization (for example, usability).",
+        "why_others_are_wrong": {
+          "B": "Validation is pre-implementation.",
+          "C": "Engagement plan is earlier.",
+          "D": "Future state is goal setting, not assessment."
+        },
+        "babok_reference": "BABOK v3 — 8.2 Assess Solution Limitations"
+      },
+      {
+        "question_number": 31,
+        "question": "Two departments use different workflows for the same loan approval. What should the BA do?",
+        "options": {
+          "A": "Model current workflows to compare and align",
+          "B": "Choose one as the standard now",
+          "C": "Create new rules immediately",
+          "D": "Escalate to senior management"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Assess the current state to understand variance before standardization.",
+        "why_others_are_wrong": {
+          "B": "Decision without analysis risks misfit.",
+          "C": "Premature rule-making causes rework.",
+          "D": "Escalation is premature."
+        },
+        "babok_reference": "BABOK v3 — 6.1 Analyze Current State"
+      },
+      {
+        "question_number": 32,
+        "question": "A key stakeholder is unavailable for workshops. What should the BA do?",
+        "options": {
+          "A": "Engage a proxy and document assumptions",
+          "B": "Pause elicitation",
+          "C": "Proceed without their input",
+          "D": "Delay the project"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Keeps momentum while preserving traceability for later validation.",
+        "why_others_are_wrong": {
+          "B": "Unnecessary delay.",
+          "C": "Risks missing critical needs.",
+          "D": "Escalates impact beyond necessity."
+        },
+        "babok_reference": "BABOK v3 — 4.2 Conduct Elicitation"
+      },
+      {
+        "question_number": 39,
+        "question": "Requirements evolve as constraints emerge. Which approach best manages this?",
+        "options": {
+          "A": "Adaptive/Agile approach",
+          "B": "Predictive waterfall",
+          "C": "Sequential phase reviews",
+          "D": "Strict change control with no iteration"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Adaptive approaches welcome change with iteration and feedback loops.",
+        "why_others_are_wrong": {
+          "B": "Limits responsiveness to change.",
+          "C": "Encourages delays in learning.",
+          "D": "Blocks learning and responsiveness."
+        },
+        "babok_reference": "BABOK v3 — 3.3 Plan BA Approach"
+      },
+      {
+        "question_number": 42,
+        "question": "For migration planning, the BA must understand inter-system dependencies. What analysis applies?",
+        "options": {
+          "A": "Dependency Analysis",
+          "B": "Data Flow Diagram",
+          "C": "Business Rules Analysis",
+          "D": "Root Cause Analysis"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Reveals relationships essential for cutover sequencing and risk control.",
+        "why_others_are_wrong": {
+          "B": "Shows data movement, not dependency structure.",
+          "C": "Defines logic, not relationships.",
+          "D": "Targets issues, not dependencies."
+        },
+        "babok_reference": "BABOK v3 — 10.12 Dependency Analysis"
+      },
+      {
+        "question_number": 44,
+        "question": "Mid-development, devs request clarification on integration rules. Best BA action?",
+        "options": {
+          "A": "Review and update requirement documentation",
+          "B": "Reject because analysis is complete",
+          "C": "Defer to testing phase",
+          "D": "Forward to QA"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Maintaining requirements ensures shared understanding and proper traceability.",
+        "why_others_are_wrong": {
+          "B": "Blocks collaboration and learning.",
+          "C": "Creates avoidable defects later.",
+          "D": "QA doesn’t own requirement definition."
+        },
+        "babok_reference": "BABOK v3 — 5.1 Maintain Requirements; 5.2 Trace Requirements"
+      },
+      {
+        "question_number": 48,
+        "question": "A stakeholder proposes a different database mid-project. What should the BA do?",
+        "options": {
+          "A": "Perform impact analysis",
+          "B": "Approve immediately",
+          "C": "Reject outright",
+          "D": "Escalate first"
+        },
+        "correct_answer": "A",
+        "babok_explanation": "Impact Analysis informs scope, cost, schedule, and risk trade-offs before a decision.",
+        "why_others_are_wrong": {
+          "B": "Approval without evidence is risky.",
+          "C": "Dismisses potentially better options.",
+          "D": "Escalate with analysis, not instead of it."
+        },
+        "babok_reference": "BABOK v3 — 10.25 Impact Analysis"
+      }
+    ]
+  }
+]
