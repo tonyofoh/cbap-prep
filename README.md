@@ -219,8 +219,8 @@ If you find this platform helpful for your CBAP preparation:
 ## 📞 Contact
 
 - **Developer**: Tony Ofoh
-- **Email**: [Your email]
-- **LinkedIn**: [Your LinkedIn]
+- **Email**: tonyofoh@gmail.com
+- **LinkedIn**: linkedin.com/in/tony-ofoh
 - **Buy Me a Coffee**: [https://www.buymeacoffee.com/tonyofoh](https://www.buymeacoffee.com/tonyofoh)
 
 ## 🙏 Acknowledgments
