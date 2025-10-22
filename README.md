@@ -220,7 +220,7 @@ If you find this platform helpful for your CBAP preparation:
 
 - **Developer**: Tony Ofoh
 - **Email**: tonyofoh@gmail.com
-- **LinkedIn**: linkedin.com/in/tony-ofoh
+- **LinkedIn**: https://linkedin.com/in/tony-ofoh
 - **Buy Me a Coffee**: [https://www.buymeacoffee.com/tonyofoh](https://www.buymeacoffee.com/tonyofoh)
 
 ## 🙏 Acknowledgments
