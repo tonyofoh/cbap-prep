@@ -1,7 +1,7 @@
 # CBAP Exam Prep Platform
+###Live Platform available at  - - https://cbap.tonyofoh.com
 
-Live Platform available at  - - https://cbap.tonyofoh.com
-A comprehensive, free-to-use platform designed to help business analysts prepare for the CBAP (Certified Business Analysis Professional) certification exam. Built with modern web technologies and featuring an intuitive user interface.
+- A comprehensive, free-to-use platform designed to help business analysts prepare for the CBAP (Certified Business Analysis Professional) certification exam. Built with modern web technologies and featuring an intuitive user interface.
 
 ![CBAP Exam Prep Platform](https://img.shields.io/badge/CBAP-Exam%20Prep-blue)
 ![React](https://img.shields.io/badge/React-18.3.1-blue)
